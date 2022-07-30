@@ -1,2 +1,4 @@
-# Project_team_67-Favicon_gen-
-This is the repository for team 67
+# Project_team_67-Favicon_gen
+A repository for team 67
+
+
