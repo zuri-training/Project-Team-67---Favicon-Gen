@@ -14,14 +14,21 @@ https://rb.gy/ac8ghs
 https://bit.ly/3vqEb20
 
 Table of Contents 
+
 General Information 
+
 Terminologies Used 
+
 Features 
+
 Product Specifications 
+
 Usage 
+
 Project Status 
-Collaboration 
+
 Contributors
+
 Acknowledgment 
 
 General Information 
