@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up page</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital@1&display=swap');
+
+        
+    body{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-family: Inter;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    
+    .welcome-back-form{
+    width: 370px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+   background: #fff;
+   padding: 20px;
+    margin: 8% auto 0;
+    text-align: left;
+    border: none;
+    border-radius: 10px;}
+    .welcome{
+        text-align: left;
+    align-items: left;
+    padding-left: 4px;
+    padding-right: 100px;}
+    h1{
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+
+}
+.ptag{
+    margin-top: -10px;
+    font-size: smaller;
+    font: 10px;
+}
+.uil-google{
+    color: black;
+}
+.google-button{
+    background-color: white;
+    color: blue;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    max-width: 98%;
+    width: 98%;
+    border: 0.1px solid rgb(10, 10, 134);
+    border-radius:6px;
+    cursor: pointer;}
+    .or{
+    margin: -19px auto 10px ;
+    width: 20px;
+    padding: 0;
+    padding-left: 4px;
+    background: white;
+}
+#email{
+    padding-bottom: 5px;
+   
+}
+ #box1{
+    align-items: left;
+    max-width: 85%;
+    width: 85%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 25px;
+    padding: 10px;
+    padding-left: 36px;
+}
+.email::before{
+    position: absolute;
+    
+    content:url(/envelope-solid.svg) ;
+    width: 20px;
+    height: 20px;
+   
+    margin: 33px 305px 1px 10px;
+    color: white;}
+.password::before{
+    position: absolute;
+   
+    content:url(/lock-solid.svg) ;
+    width: 20px;
+    height: 20px;
+   
+    margin: 33px 305px 1px 10px;
+    color: white;
+}
+.passwor::br{
+    position: absolute;
+    content: url(/eye-solid.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px 1px;
+    background-color: red;
+}
+#box2{
+    align-items: left;
+    max-width: 85%;
+    width: 85%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding-top: 2px;
+   
+    text-align: left;
+    padding-left: 25px;
+    padding: 10px;
+    padding-left: 36px;
+    margin-left: 0;
+}
+.forgotpass{
+    margin-top: 0;
+    padding-top: 10px;
+    padding: 5px;
+    margin: 0 0 25px 231px;
+  
+}
+.forgotpass a{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sign{
+    max-width: 100%;
+    width: 100%;
+    background-color: #040f4ec9;
+   
+    color: white;
+    
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.sign a{
+    color: white;
+}
+.new{
+    padding: 5px auto;
+    text-align: center;
+    padding: 0;
+    margin: 5px 50px 10px 50px;
+}
+
+
+@media(max-width:520px){
+    .welcome-back-form{
+        width: 80%;
+    }
+    .forgotpass{
+    margin-top: 0;
+    padding-top: 10px;
+    padding: 3px;
+        margin: 0 0 25px 215px;
+    }
+  
+    
+   
+        }
+
+
+    </style>
+</head>
+<body>
+    
+    <form action="#" method="#">
+        <div class="welcome-back-form">
+            <div class="welcome">
+                <h1>Welcome back!</h1>
+                <p class="ptag">Sign in to your favipro.com account</p>
+            </div>
+    <div>
+        <a href=""><button type="button" value="continue with Google" class="google-button"><i class="uil uil-google"></i> &nbsp; Continue with Google </button></a>
+        
+    </div>
+    <hr>
+    <p class="or">or</p>
+    <div class="email">
+        <label id="email">Username or Email Address</label>
+        
+            
+        <input id="box1" type="text" placeholder="Johndoe@gmail.com"required> <span class="spa">
+        </div>
+    
+<div class="password">
+    <label id="password">Password</label>
+    <input id="box2" type="text" placeholder="Johndoe" required>
+    
+</div>
+<p class="forgotpass">
+    <a href="#">forgot password?</a>
+</p> 
+<div>
+    <button class="sign">
+        <a href="#">Sign in</a>
+    </button>
+</div>
+<p class="new">
+    New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
+</p>
+</div>
+</body>
+</html>
