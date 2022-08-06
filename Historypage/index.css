@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  width: min(100vw, 100%);
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.sidebar {
+  background: #19191B;
+  padding: 1.6rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sidebar span img {
+  width: 18px;
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-160px);
+    transition: transform ease-in 0.3s;
+  }
+}
+
+.open {
+  transform: translateX(0);
+}
+
+.logo {
+  padding: 0 1.6rem;
+}
+.logo a {
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  position: relative;
+}
+.nav .close {
+  position: absolute;
+  top: -1rem;
+  right: 1.6rem;
+  color: #f5f5f5;
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav .close {
+    display: inline-block;
+  }
+}
+.nav .close h3 {
+  font-weight: 300;
+}
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.nav-links_link {
+  padding: 0 1.6rem;
+  position: relative;
+}
+.nav-links_link:hover::before, .nav-links_link .active::before {
+  width: 3px;
+  height: 100%;
+  border-radius: 0 0.8rem 0.8rem 0;
+  position: absolute;
+  content: "";
+  background: #fff;
+  left: 0;
+}
+.nav-links_link a {
+  display: flex;
+  align-items: center;
+  gap: 0.89rem;
+  color: #B2B2B3;
+}
+.nav-links_link a:hover {
+  color: #f5f5f5;
+}
+
+.logout {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+  color: #fff;
+  cursor: pointer;
+  padding: 1.6rem;
+}
+
+.main-content header {
+  background: #F0F0F0;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content header .hamburger-menu {
+  display: grid;
+  gap: 0.3rem;
+  cursor: pointer;
+  margin-left: 1.2rem;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .main-content header .hamburger-menu {
+    display: grid;
+  }
+}
+.main-content header .hamburger-menu .line {
+  height: 2px;
+  width: 1.2rem;
+  background: #333;
+}
+.main-content header .user {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.main-content_details {
+  padding: 1.7rem 1rem;
+}
+.main-content_details .trackboard {
+  padding: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.86rem;
+}
+.main-content_details .favicons-generated {
+  padding: 0.8rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 13rem;
+  gap: 1.3rem;
+}
+@media screen and (max-width: 768px) {
+  .main-content_details .favicons-generated {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 13rem);
+  }
+}
+.main-content_details .favicons-generated_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #B2B2B3;
+  border-radius: 0.4rem;
+}
+.main-content .generated-files {
+  padding: 1.3rem 0.8rem;
+}
+.main-content .generated-files div {
+  padding: 0.8rem 0;
+}
+.main-content .generated-files .table {
+  border-collapse: collapse;
+}
+@media screen and (max-width: 768px) {
+  .main-content .generated-files .table {
+    overflow-x: scroll;
+  }
+}
+.main-content .generated-files .table_header {
+  background: #3F3F41;
+  border-radius: 0.6rem;
+  color: #f5f5f5;
+}
+.main-content .generated-files .table_header th {
+  padding: 0.7rem;
+  font-weight: 250;
+  font-size: 0.8rem;
+}
+.main-content .generated-files .table_header th:first-of-type {
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+.main-content .generated-files .table_header th:last-of-type {
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+.main-content .generated-files .table td {
+  padding: 0 1.2rem;
+  font-size: 0.7rem;
+}
+.main-content .generated-files .table tr {
+  border-bottom: 1px solid #ddd;
+}
+.main-content .generated-files .table tr:nth-child(even) {
+  background-color: #F0F0F0;
+}
+.main-content .generated-files .table .iconic {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+.main-content .generated-files .table .iconic-name {
+  text-decoration: underline;
+}/*# sourceMappingURL=index.css.map */
