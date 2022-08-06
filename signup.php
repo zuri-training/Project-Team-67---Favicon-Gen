@@ -10,7 +10,7 @@ $Password = mysqli_real_escape_string($conn, $_POST['password']);
 
 
 
-$sql = "INSERT INTO register (username, email, password ) VALUES ('$username','$Email', '$Password');";
+$sql = "INSERT INTO register (username, user_email, user_password ) VALUES ('$username','$Email', '$Password');";
 mysqli_query($conn, $sql);
 
 header("Location: index.php?signup=success");
