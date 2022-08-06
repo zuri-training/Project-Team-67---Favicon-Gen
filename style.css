@@ -1,0 +1,133 @@
+*{
+  margin: 0;  
+  box-sizing: border-box;
+  max-width:100%;
+  
+}
+
+body, html {
+    max-width: 100%;
+    max-height: 100vh;
+    background-color: whitesmoke;
+    display: flex;
+    font-family: inter;
+}
+
+header{
+    display: flex;
+}
+
+.navbar{
+    flex-direction: column;
+    width:100%;
+    background-color: beige;
+    height: 10vh;
+}
+
+main{
+    display:flex;
+    width:90%;
+    justify-content: center;
+    align-items: left;
+    margin-top: 100px;
+    height:80vh;
+    background-color: aquamarine;
+   
+    }
+.sign_in{
+    background-color: rgb(251, 253, 252);
+    width:99%;
+    max-height: 80vh;
+    margin:auto;
+    padding:20px;
+    border-radius: 10px;
+
+}
+
+#sign_up{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding:8px;
+    width:90%;
+    text-align: justify;
+    display: flex;
+    position: relative;
+}
+
+#username{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding:8px;
+    width:90%;
+    text-align: justify;
+}
+
+#email{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding:8px;
+    width:90%;
+    text-align: justify;
+   background-image:url('envelope-icon-18230.png');
+   background-repeat:no-repeat;
+   background-size: 20px;
+   
+}
+#password{
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding:8px;
+    width:90%;
+    text-align: justify;
+}
+/* Style the form icons 
+.icon {
+  padding: 10px;
+  background: rgb(30, 255, 236);
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+/*<div style="border: 1px solid #DDD;">
+    <img src="icon.png"/>
+    <input style="border: none;"/>
+</div>*/
+
+
+#btn{
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    padding:8px;
+    width:90%;
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    border-radius: 3px;
+}
+
+h4{
+    font-size: 12px;
+    text-align:center;
+}
+
+.acct{
+    font:14px;
+    text-align: center;
+}
+
+#form{
+
+    /*background-color: blue;*/
+    padding: 0px 0px 8px 45px;
+}
