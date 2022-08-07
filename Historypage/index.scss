@@ -36,7 +36,7 @@ $mobileScreenWidth: 768px;
 
     @media screen and (max-width: $mobileScreenWidth) {
         position: fixed;
-        height: 100vh;
+        height: max(100vh, 100%);
         top: 0;
         left: 0;
         bottom: 0;

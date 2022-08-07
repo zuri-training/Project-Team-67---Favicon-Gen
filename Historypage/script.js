@@ -5,10 +5,23 @@ let months = ["January", "February", "March", "April", "May", "June", "July", "A
 const today = new Date();
 
 let date = {
-   day:days[today.getDay], 
-   month: months[today.getMonth],
-   year: today.getFullYear 
+   day: days[today.getDay()], 
+   calendarDay: today.getDate() ,
+   month: months[today.getMonth()],
+   year: today.getFullYear() 
 };
+
+let dayDiv = document.querySelector(".day");
+let calendarDayDiv = document.querySelector(".calendarDiv");
+let monthDiv = document.querySelector(".month");
+let yearDiv = document.querySelector(".year");
+
+dayDiv.innerHTML = `${date.day}, `;
+calendarDayDiv.innerText = date.calendarDay;
+monthDiv.innerText = date.month;
+yearDiv.innerText = date.year;
+
+console.log(date)
 
 const menuBtn = document.querySelector(".hamburger-menu");
 const closeBtn = document.querySelector(".close");
