@@ -43,7 +43,7 @@ header button{
 }
 .section1{
     text-align: center;
-    padding: 1.5rem 20rem 0rem;
+    padding: 1.5rem 20rem 4rem;
     justify-content: center;
 }
 .section1 h1{
@@ -71,10 +71,7 @@ header button{
     padding: 0rem 1.5rem;
 }
 .section2{
-
-}
-.whyFavipro{
-    display: flex;
+    padding: 1rem 3rem;
 }
 .section2 .whatWeOffer{
     color: #747DA9;
@@ -85,4 +82,17 @@ header button{
 }
 .section2 p{
     font-size:1.5rem;
+}
+.whyFavipro{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.whyFavipro div{
+    border: 1px solid #747DA9;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+}
+.whyFavipro h3{
+    color: #747DA9;
 }
