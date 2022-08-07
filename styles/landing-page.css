@@ -71,7 +71,7 @@ header button{
     padding: 0rem 1.5rem;
 }
 .section2{
-    padding: 1rem 3rem;
+    padding: 1rem 3rem 3rem;
 }
 .section2 .whatWeOffer{
     color: #747DA9;
@@ -95,4 +95,43 @@ header button{
 }
 .whyFavipro h3{
     color: #747DA9;
+}
+.whyFavipro p{
+    font-size: 1.2rem;
+}
+.whyFavipro a{
+    color: #747DA9;
+}
+.section3 .top{
+    text-align: center;
+}
+.section3 h1{
+    color: #525D93;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+}
+.section3 h4{
+    color: #747DA9;
+    padding-bottom: 0rem;
+}
+.section3 p{
+    margin-top: 0rem;
+}
+.section3 .howTo{
+    justify-items: flex-start;
+
+}
+.section3 .rectangle{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+.section3 .num{
+    color: #747DA9;
+    border: 1px solid #747DA9;
+    border-radius: 50%;
+    padding: .2rem;
+    margin: 0rem 1rem;
+}
+.section3 .text{
 }
