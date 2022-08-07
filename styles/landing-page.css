@@ -5,17 +5,23 @@ header{
     display: flex;
     justify-content: space-around;
     margin: auto;
+    padding: 0rem 4rem;
 }
 header .links{
     color: #B2B2B3;
     display: flex;
     justify-content: space-around;
-    width: 33%;
+    width: 30%;
     margin: auto;
-    padding:.4rem;
+    padding-left: 8rem;
 }
 a{
-    color: #B2B2B3;
+    color: #616168;
+    text-decoration: none;
+}
+a :hover{
+    color: #2F3C7E;
+    text-decoration: underline;
 }
 header .links :hover{
     color: #525D93;
@@ -28,7 +34,6 @@ header button{
     border-color: #747DA9;
     padding: .7rem 2rem;
 }
-
 #sign-in{
     color:#747DA9;
     background-color: #ffffff;
@@ -36,21 +41,14 @@ header button{
     border-color: #747DA9;
     padding: .7rem 2rem;
 }
-a{
-    text-decoration: none;
-}
-a :hover{
-    color: #2F3C7E;
-    text-decoration: underline;
-}
 .section1{
     text-align: center;
-    margin: 7% 28%;
+    padding: 1.5rem 20rem 0rem;
     justify-content: center;
 }
 .section1 h1{
     color: #525D93;
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .section1 button{
     color: #ffffff;
@@ -70,10 +68,21 @@ a :hover{
     justify-content: space-around;
     margin: auto;
     height: 5rem;
+    padding: 0rem 1.5rem;
 }
 .section2{
 
 }
 .whyFavipro{
     display: flex;
+}
+.section2 .whatWeOffer{
+    color: #747DA9;
+    margin: 2rem 0rem 0rem;
+}
+.section2 #Favipro{
+    color: #747DA9;
+}
+.section2 p{
+    font-size:1.5rem;
 }
