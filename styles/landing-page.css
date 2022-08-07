@@ -1,0 +1,79 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+header .links{
+    color: #B2B2B3;
+    display: flex;
+    justify-content: space-around;
+    width: 33%;
+    margin: auto;
+    padding:.4rem;
+}
+a{
+    color: #B2B2B3;
+}
+header .links :hover{
+    color: #525D93;
+    text-decoration: underline;
+}
+header button{
+    color: #ffffff;
+    background-color: #2F3C7E;
+    border-radius: 1rem;
+    border-color: #747DA9;
+    padding: .7rem 2rem;
+}
+
+#sign-in{
+    color:#747DA9;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border-color: #747DA9;
+    padding: .7rem 2rem;
+}
+a{
+    text-decoration: none;
+}
+a :hover{
+    color: #2F3C7E;
+    text-decoration: underline;
+}
+.section1{
+    text-align: center;
+    margin: 7% 28%;
+    justify-content: center;
+}
+.section1 h1{
+    color: #525D93;
+    font-size: 3rem;
+}
+.section1 button{
+    color: #ffffff;
+    background-color: #2F3C7E;
+    border-radius: 1rem;
+    border-color: #747DA9;
+    padding: .7rem 2rem;
+    margin: 1rem;
+}
+.section1 button:hover{
+    cursor: pointer;
+
+}
+.brands{
+    background-color: #FEF8F8;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    height: 5rem;
+}
+.section2{
+
+}
+.whyFavipro{
+    display: flex;
+}
