@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--this is google meta client side ID for google auth-->
+    <meta name="gogle-signin-client-id" content="86876680688-npumis891a72o4caaiqm5s14cvgtambk.apps.googleusercontent.com">
+   
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="styles/signup.css">  
+<title>Sign up page</title>
+</head>
+<body>
+    
+    <form action="#" method="#">
+        <!--sign in with google, div starts here-->
+        
+        <div class="welcome-back-form">
+            <div class="welcome">
+                <h1>Welcome back!</h1>
+                <p class="ptag">Sign in to your favipro.com account</p>
+            </div>
+    
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        
+    <hr>
+    <p class="or">or</p>
+<!-- please note this is email div-->
+<div class="email">
+    <label id="email">Username or Email Address</label>
+    <input id="box1" type="text" name="email" placeholder="Enter Your Username" > 
+    <span class="spa"></span>
+</div>
+    <!-- email div close here-->
+    
+   
+ <!--password div starts-->   
+<div class="password">
+    <label id="password">Password</label>
+    <input id="box2" type="text" name="password" placeholder="Enter Your Password" >
+    
+</div>
+<!--passowrd div ends-->
+<p class="forgotpass">
+    <a href="#">forgot password?</a>
+</p> 
+<div>
+    <button class="sign">
+        <a href="#">Sign in</a>
+    </button>
+</div>
+<p class="new">
+    New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
+</p>
+</div>
+<script src="sign_up.js"></script>
+
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+</body>
+</html>
