@@ -28,7 +28,15 @@ if (isset($_SESSION["user_id"])) {
     
     <?php if (isset($user)): ?>
         
-        <p>Hello <?= htmlspecialchars($user["name"]) ?></p>
+        <p>Hello <?= htmlspecialchars($user["name"]) ?> Welcome to your Dashboard</p>
+        
+
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+        <p>Kindly upload the picture to covert to favicon : </p>
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload Image" name="submit">
+        </form>
+
         
         <p><a href="logout.php">Log out</a></p>
         
