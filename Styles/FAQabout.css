@@ -1,0 +1,676 @@
+
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html
+{
+    font-family: ;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+/*=========================
+Header
+=========================*/
+header{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    padding: 0rem 4rem;
+}
+header .links{
+    color: #B2B2B3;
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    margin: auto;
+    padding-left: 8rem;
+}
+a{
+    color: #616168;
+    text-decoration: none;
+}
+a :hover{
+    color: #2F3C7E;
+    text-decoration: underline;
+}
+header .links :hover{
+    color: #525D93;
+    text-decoration: underline;
+}
+header button{
+    color: #ffffff;
+    background-color: #2F3C7E;
+    border-radius: 1rem;
+    border-color: #747DA9;
+    padding: .7rem 2rem;
+}
+#sign-in{
+    color:#747DA9;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    border-color: #747DA9;
+    padding: .7rem 2rem;
+    cursor: pointer;
+}
+
+/*hide signin by default, form will be open using JS*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+/*=========================
+Main section styling starts
+=========================*/
+
+
+
+main{
+   margin-top: 100px;
+   margin-bottom: 100px;
+}
+
+/*=========================
+Sign-in page
+=========================*/
+
+.signin-page{
+        padding: 0;
+        margin: 0;
+        background-color: white;
+        font-family: Inter;
+        box-sizing: border-box;
+        justify-content: center;
+    }
+    
+.welcome-back-form{
+    width: 370px;
+   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+   background: #fff;
+   padding: 20px;
+    margin: 8% auto 0;
+    text-align: left;
+    border: none;
+    border-radius: 10px;}
+    .welcome{
+        text-align: left;
+    align-items: left;
+    padding-left: 4px;
+    padding-right: 100px;}
+    h1{
+    padding-bottom: 7px;
+    margin-bottom: 6px;
+    font-weight: bolder;
+
+}
+.ptag{
+    margin-top: -10px;
+    font-size: smaller;
+    font: 10px;
+}
+.uil-google{
+    color: black;
+}
+.g-signin2{
+
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    max-width: 98%;
+    width: 98%;
+    
+    cursor: pointer;
+}
+    .or{
+    margin: -19px auto 10px ;
+    width: 20px;
+    padding: 0;
+    padding-left: 4px;
+    background: white;
+}
+#email{
+    padding-bottom: 5px;
+   
+}
+ #box1{
+    align-items: left;
+    max-width: 85%;
+    width: 85%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 30px;
+    text-align: left;
+    padding-left: 25px;
+    padding: 10px;
+    padding-left: 36px;
+}
+.email::before{
+    position: absolute;
+    
+    content:url(/envelope-solid.svg) ;
+    width: 20px;
+    height: 20px;
+   
+    margin: 33px 305px 1px 10px;
+    color: white;}
+
+.password::before{
+    position: absolute;
+   
+    content:url(/lock-solid.svg) ;
+    width: 20px;
+    height: 20px;
+   
+    margin: 33px 305px 1px 10px;
+    color: white;
+}
+.passwor::br{
+    position: absolute;
+    content: url(/eye-solid.svg);
+    width: 20px;
+    height: 20px;
+    margin: 10px 1px;
+    background-color: red;
+}
+#box2{
+    align-items: left;
+    max-width: 85%;
+    width: 85%;
+    border: 0.5px solid black;
+    border-radius: 5px;
+    margin-top: 7px;
+    padding-top: 2px;
+   text-align: left;
+    padding-left: 25px;
+    padding: 10px;
+    padding-left: 36px;
+    margin-left: 0;
+}
+.forgotpass{
+    margin-top: 0;
+    padding-top: 10px;
+    padding: 5px;
+    margin: 0 0 25px 231px;
+  
+}
+.forgotpass a{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sign{
+    max-width: 100%;
+    width: 100%;
+    background-color: #040f4ec9;
+    color: white;
+     border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+.sign a{
+    color: white;
+}
+.new{
+    padding: 5px auto;
+    text-align: center;
+    padding: 0;
+    margin: 5px 50px 10px 50px;
+}
+
+/*==============================*/
+
+/*==============================*/
+
+
+
+/*=========================
+About Us
+=========================*/
+
+.about{
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: rgb(190, 48, 48);
+   
+    
+}
+
+.about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.content-section,
+.image-section{
+float: none;
+width: 100%;
+display: block;
+margin: auto;
+}
+
+
+
+.about-container .about-title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.about-container .about-title h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #283042;
+}
+
+.about-container .about-title h1 span::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #283042;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+
+.content-section .title{
+    font-size: 25px;
+    color: #283042;
+    text-align: start;
+
+}
+.content-section .title h1::after{
+    content: "";
+    height: 5px;
+    width: 100px;
+    background-color: #283042;
+    border-radius: 25px;
+    display: block;
+    margin: auto;
+}
+
+
+.image-section img{
+    width: 100%;
+    height: auto;
+    margin-top: 50px;
+}
+
+.content-section .content p{
+    margin-top: 50px;
+    color: #B2B2B3;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+.content-section .content .button{
+    margin-top: 50px;
+}
+
+
+.content-section .content .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color:  #2F3C7E;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+
+
+.content-section .content .button a:hover{
+    color: #747DA9;
+    background-color: hotpink;
+    transition: 1s ease;
+}
+.team{
+    background-color: #747DA9;
+}
+
+.team-container{
+    margin: 20px 40px;
+}
+
+.team-heading{
+    font-size: 25px;
+    color: #283042;
+    margin-bottom: 15px;
+}
+
+.team-title-1{
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 18px;
+    color: #283042;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.team-title-1::after{
+    content: "";
+    height: 5px;
+    width: 80px;
+    background-color: #283042;
+    border-radius: 25px;
+    display: block;
+    margin: 5px;
+}
+
+
+.profiles{
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+
+}
+
+.profile{
+    flex: 50%;
+}
+
+
+.profile .profile-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 400ms;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+}
+
+.profile .user-name{
+    text-align: center;
+    padding: 20px;
+}
+
+.team-title-2{
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 18px;
+    color: #283042;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+.team-title-2::after{
+    content: "";
+    height: 5px;
+    width: 80px;
+    background-color: #283042;
+    border-radius: 25px;
+    display: block;
+    margin: 5px;
+}
+
+/*=========================
+FAQ Acordion starts
+=========================*/
+
+ .faq {
+    width: 100%;
+    max-width: 100%;
+    height: 200vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+    
+}
+
+.faq-container{
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+
+.accordion{
+    
+    max-width: 90rem;
+}
+.accordion-header 
+{
+   text-align: center;
+   line-height: 2rem;
+   margin-bottom: 1rem;
+
+} 
+
+ .accordion-title {
+    font-size: 20px;
+    font-weight: 600;
+    color:  #283042;
+}
+.accordion-description{
+    font-size: 16px;
+}
+.accordion-item{
+    
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    
+    
+}
+
+.accordion-item:hover{
+    background-color: #eff4fc;
+}
+
+.accordion-link{
+    font-size: 16px;
+    color:  #283042;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: #283042;
+    padding: .5rem;
+}
+
+.accordion-link .ion-md-remove{
+    display: none;
+}
+
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #eff4fc;
+    transition: max-height .25s;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .2rem;
+    height: 100%;
+    background-color: #283042;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    font-size: 16px;
+    color: #283042;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.accordion-item:target .answer{
+max-height: 20rem;
+
+
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+    display: block;
+}
+
+active .answer p{
+    max-height: 0;
+    margin: 1rem 2rem;
+}
+
+
+
+/*=========================
+Privacy page styling
+=========================*/
+
+
+.privacy {
+    width: 100%;
+    max-width: 100%;
+    height: 200vh;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+    
+}
+
+.privacy-container{
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    margin-top: 80px;
+    margin-bottom: 100px;
+    
+}
+
+/*=========================
+Footer
+=========================*/
+
+footer{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+    background-color: blue;
+
+}
+
+
+/*=========================
+Media Quesries for accordion
+=========================*/
+@media screen and (min-width: 1024px){ 
+    
+.container{
+    width: 60%;
+    max-width: 60rem;
+}
+
+.accordion{max-width: 60rem;}
+
+.accordion-title {font-size: 24px;}
+
+.accordion-description{font-size: 18px;}
+
+.accordion-link{
+    font-size: 18px;
+    padding: 1rem 0;
+}
+
+.about-container{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+   
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+
+}
+
+
+/*=========================
+Media Quesries for about
+=========================*/
+@media screen and (min-width: 768px){
+ 
+
+    .profiles{
+       
+        display: flex;
+}
+
+
+@media (max-width:520px){
+    .welcome-back-form{
+        width: 80%;
+    }
+    .forgotpass{
+    margin-top: 0;
+    padding-top: 10px;
+    padding: 3px;
+        margin: 0 0 25px 215px;
+    }
+  
+    
+   
+}
+
+}
