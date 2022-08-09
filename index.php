@@ -32,9 +32,11 @@ if (isset($_SESSION["user_id"])) {
         
 
         <form action="upload.php" method="post" enctype="multipart/form-data">
-        <p>Kindly upload the picture to covert to favicon : </p>
+        <p>Kindly upload the picture to covert to favicon: OR 
+            Post you link below</p>
         <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Upload Image" name="submit">
+        <input type="text" name="link" id="link">
+        <input type="submit" value="Convert Now" name="submit">        
         </form>
 
         
