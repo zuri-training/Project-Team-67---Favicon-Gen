@@ -1,0 +1,33 @@
+Research 
+
+1. I contributed to organisation of research note. 
+Link: https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1 
+
+2. I Identified painpoints from the survey and interview.
+Link: https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1  
+
+2. I created a user persona (sarah). 
+Link: https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1
+ 
+3. I created empathy map for one user group. All the empathy maps were combined to create an aggregated empathy map.
+Link: https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1
+ 
+
+Desktop screens
+
+1. I created components for buttons and nav bar during prototyping of the desktop screens.
+Link: https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=448%3A34654
+ 
+
+2. I prototyped the entire desktop screens except the FAQ screen
+Link: https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=448%3A34654
+
+
+Tablet screens
+
+1. I created 'generate from emoji screen'
+Link: https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=448%3A34654
+
+
+2. I created sign up and sign in.
+Link: https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=448%3A34654
