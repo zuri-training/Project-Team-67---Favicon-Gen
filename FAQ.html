@@ -13,6 +13,10 @@
   <body>
     <header>
         <img src="" alt="LOGO" />
+        <!--this is navigation toggler for mobile screen-->
+        <div class="nav-toggler">
+          <span></span>
+          </div>
         <nav class="links">
           <a href="#">Home</a>
           <a href="#">About Us</a>
@@ -26,7 +30,7 @@
       <hr />
           <main>
             <section class="faq">
-              <div class="container">
+              <div class="faq-container">
               <div class="accordion">
                   <div class="accordion-header">
                     <h1 class="accordion-title">Frequently Asked <br> Questions</h1>
@@ -162,8 +166,14 @@
             </div>
           </footer>
           <!--footer ends-->
-          //accordion scripts starts
-          <script>var accordionItems = document.getElementsByClassName("accordion-link");
+          <!--
+          //Nav-bar toggler scripts starts header
+          -->
+          <script src="JS/index.js"></script>
+          <!--//accordion scripts starts
+          -->
+          <script>
+          var accordionItems = document.getElementsByClassName("accordion-link");
             var i;
             
             for (i = 0; i < accordionItems.length; i++) {
@@ -177,6 +187,8 @@
                 }
               });
             }</script>
+            <!--
           //accordion scripts ends
+        -->
           </html>
           </body>

@@ -14,50 +14,47 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
 integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="styles/FAQabout.css">  
+<link rel="stylesheet" href="styles/sign_in.css">  
 <title>Sign up page</title>
 </head>
 <body>
-    
     <form action="#" method="#">
-        <!--sign in with google, div starts here-->
-        
-        <div class="welcome-back-form">
-            <div class="welcome">
-                <h1>Welcome back!</h1>
-                <p class="ptag">Sign in to your favipro.com account</p>
-            </div>
-    <hr>
-    <p class="or">or</p>
+    
+    <div class="welcome-back-form">
+        <div class="welcome">
+            <h1>Welcome back!</h1>
+            <p class="ptag">Sign into your account</p>
+        </div>
+    
 <!-- please note this is email div-->
 <div class="email">
-    <label id="email">Username or Email Address</label>
-    <input id="box1" type="text" name="email" placeholder="Enter Your Username" > 
-    <span class="spa"></span>
-</div>
+    <label >Username or Email Address</label>
+    <input class="box1" type="text" name="email" placeholder="Enter Your Username" > <br>
+    <span class="spa" id="email-error">Enter Your Name or Email </span>
+</div><br>
     <!-- email div close here-->
     
    
  <!--password div starts-->   
 <div class="password">
-    <label id="password">Password</label>
-    <input id="box2" type="text" name="password" placeholder="Enter Your Password" >
-    
+    <label>Password</label>
+    <input class="box1" type="text" name="password" placeholder="Enter Your Password" ><br>
+    <span id="pass-error"> Enter Your Password</span>
 </div>
 <!--passowrd div ends-->
 <p class="forgotpass">
     <a href="#">forgot password?</a>
 </p> 
 <div>
-    <button class="sign">
-        <a href="#">Sign in</a>
-    </button>
+<button class="sign"><a href="#">Sign in</a> </button>
 </div>
 <p class="new">
     New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
 </p>
 </div>
+<script src="script.js">
 
+</script>
 
 
 </body>

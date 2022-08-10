@@ -63,6 +63,68 @@ header button{
     cursor: pointer;
 }
 
+
+/*=========================
+Nav toggler to navigation 
+mobile screen responsive
+=========================*/
+
+header .nav-toggler {
+    height: 40px;
+    width: 45px;
+    border: 1px solid var(--bg-black-50);
+    cursor: pointer;
+    position: fixed;
+    left: 300px;
+    top: 20px;
+    border-radius: 5px;
+    background: var(--bg-black-100);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  
+  header .nav-toggler span {
+    height: 2px;
+    width: 18px;
+    background: var(--skin-color);
+    display: inline-block;
+    position: relative;
+  }
+  
+  header .nav-toggler.open span {
+    background-color: transparent;
+  }
+  header .nav-toggler span::before {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: -6px;
+    left: 0;
+  }
+  header .nav-toggler.open span::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  header .nav-toggler span::after {
+    content: "";
+    height: 2px;
+    width: 18px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+  }
+  header .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+
+
+
 /*hide signin by default, form will be open using JS*/
 .form-popup {
     display: none;
@@ -77,17 +139,13 @@ header button{
 Main section styling starts
 =========================*/
 
-
-
 main{
-   margin-top: 100px;
-   margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 80px;
 }
-
 /*=========================
 Sign-in page
 =========================*/
-
 .signin-page{
         padding: 0;
         margin: 0;
@@ -239,201 +297,11 @@ a:hover{
     margin: 5px 50px 10px 50px;
 }
 
-/*==============================*/
+/*==============================
 
-/*==============================*/
-
-
-
-/*=========================
-About Us
-=========================*/
-
-.about{
-    width: 100%;
-    max-width: 100%;
-    min-height: 100vh;
-    background-color: rgb(190, 48, 48);
-   
-    
-}
-
-.about-container{
-    width: 80%;
-    display: block;
-    margin: auto;
-}
-
-.content-section,
-.image-section{
-float: none;
-width: 100%;
-display: block;
-margin: auto;
-}
+==============================*/
 
 
-
-.about-container .about-title{
-    width:100%;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.about-container .about-title h1{
-    text-transform: capitalize;
-    font-size: 25px;
-    color: #283042;
-}
-
-.about-container .about-title h1 span::after{
-    content: "";
-    height: 5px;
-    width: 100px;
-    background-color: #283042;
-    border-radius: 25px;
-    display: block;
-    margin: auto;
-}
-
-
-.content-section .title{
-    font-size: 25px;
-    color: #283042;
-    text-align: start;
-
-}
-.content-section .title h1::after{
-    content: "";
-    height: 5px;
-    width: 100px;
-    background-color: #283042;
-    border-radius: 25px;
-    display: block;
-    margin: auto;
-}
-
-
-.image-section img{
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-}
-
-.content-section .content p{
-    margin-top: 50px;
-    color: #B2B2B3;
-    font-size: 16px;
-    line-height: 1.5;
-
-}
-
-.content-section .content .button{
-    margin-top: 50px;
-}
-
-
-.content-section .content .button a{
-    text-decoration: none;
-    padding: 8px 25px;
-    background-color:  #2F3C7E;
-    border-radius: 40px;
-    color: #fff;
-    font-size: 18px;
-    letter-spacing: 1.5px;
-}
-
-
-
-.content-section .content .button a:hover{
-    color: #747DA9;
-    background-color: hotpink;
-    transition: 1s ease;
-}
-.team{
-    background-color: #747DA9;
-}
-
-.team-container{
-    margin: 20px 40px;
-}
-
-.team-heading{
-    font-size: 25px;
-    color: #283042;
-    margin-bottom: 15px;
-}
-
-.team-title-1{
-    text-transform: uppercase;
-    text-align: start;
-    font-size: 18px;
-    color: #283042;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-
-.team-title-1::after{
-    content: "";
-    height: 5px;
-    width: 80px;
-    background-color: #283042;
-    border-radius: 25px;
-    display: block;
-    margin: 5px;
-}
-
-
-.profiles{
-    display: flex;
-    flex-wrap: wrap;
-    
-   
-
-}
-
-.profile{
-    flex: 50%;
-}
-
-
-.profile .profile-img{
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: 400ms;
-   display: block;
-   margin-left: auto;
-   margin-right: auto;
-   
-}
-
-.profile .user-name{
-    text-align: center;
-    padding: 20px;
-}
-
-.team-title-2{
-    text-transform: uppercase;
-    text-align: start;
-    font-size: 18px;
-    color: #283042;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-
-
-.team-title-2::after{
-    content: "";
-    height: 5px;
-    width: 80px;
-    background-color: #283042;
-    border-radius: 25px;
-    display: block;
-    margin: 5px;
-}
 
 /*=========================
 FAQ Acordion starts
@@ -447,7 +315,8 @@ FAQ Acordion starts
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+   
+    
     
     
 }
@@ -459,6 +328,7 @@ FAQ Acordion starts
     padding: 0 1.5rem;
     margin-top: 80px;
     margin-bottom: 100px;
+    
     
 }
 
@@ -475,13 +345,15 @@ FAQ Acordion starts
 } 
 
  .accordion-title {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
-    color:  #283042;
+    color:  #2F3C7E;
+    font-weight: 700;
 }
 .accordion-description{
     font-size: 16px;
 }
+
 .accordion-item{
     
     border-radius: .4rem;
@@ -490,6 +362,12 @@ FAQ Acordion starts
     cursor: pointer;
     
     
+}
+
+
+.accordion-item a{
+    text-decoration: none;
+
 }
 
 .accordion-item:hover{
@@ -571,8 +449,7 @@ Privacy page styling
 .privacy {
     width: 100%;
     max-width: 100%;
-    height: 200vh;
-    background-color: blue;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -591,6 +468,43 @@ Privacy page styling
     
 }
 
+
+.privacy-description{
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    line-height: 2.0;
+}
+
+
+
+.privacy-item{
+text-align: justify;
+line-height: 1.8;
+
+}
+
+.privacy-heading {
+    font-size: 16px;
+    color:  #2F3C7E;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: justify;
+    margin-bottom: 20px;
+   
+
+   
+}
+
+.privacy-list ol li{
+    font-size: 12px;
+    text-align: justify;
+   
+    
+}
+
+
 /*=========================
 Footer
 =========================*/
@@ -607,25 +521,32 @@ footer{
 /*=========================
 Media Quesries for accordion
 =========================*/
-@media screen and (min-width: 1024px){ 
+@media screen and (max-width: 1024px){ 
     
-.container{
-    width: 60%;
-    max-width: 60rem;
+.faq-container{
+    width: 90%;
+    display: block;
+    margin: 0px auto;
+    margin-top: -100px;
+    padding: 50px 0px;
 }
 
-.accordion{max-width: 60rem;}
+
+
+.accordion{max-width: 90rem;}
 
 .accordion-title {font-size: 24px;}
 
-.accordion-description{font-size: 18px;}
+.accordion-description{font-size: 20px;}
 
 .accordion-link{
     font-size: 18px;
     padding: 1rem 0;
 }
 
-.about-container{
+.about-container,
+.privacy-container
+{
     width: 80%;
     display: block;
     margin: 0px auto;
@@ -642,23 +563,11 @@ Media Quesries for accordion
     width: 40%;
 }
 
-
-}
-
-
 /*=========================
-Media Quesries for about
+Media Quesries signin
 =========================*/
-@media screen and (min-width: 768px){
- 
 
-    .profiles{
-       
-        display: flex;
-}
-
-
-@media (max-width:520px){
+@media (min-width:520px){
     .welcome-back-form{
         width: 80%;
     }
