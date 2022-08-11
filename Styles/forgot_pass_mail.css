@@ -1,0 +1,113 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital@1&display=swap');
+
+        
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+    background-image: url(Images/background.svg);
+}
+
+.welcome-back-form{
+width: 370px;
+box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.5);
+background: #fff;
+padding: 20px;
+margin: 8% auto 0;
+text-align: left;
+border: none;
+border-radius: 10px;
+}
+
+.welcome{
+    text-align: left;
+align-items: left;
+padding-left: 4px;
+padding-right: 100px;}
+h1{
+padding-bottom: 15px;
+margin-bottom: 6px;
+font-weight: bolder;
+font-size: 30px;
+
+}
+.ptag{
+margin-top: -10px;
+font-size: smaller;
+font: 10px;
+margin-bottom: 50px;
+}
+.email::before{
+position: absolute;
+
+content:url(Images/envelope-solid.svg) ;
+width: 20px;
+height: 20px;
+padding-bottom: 0;
+margin: 35.5px 304px 0px 10px;
+color: white;}
+
+.uil-google{
+color: black;
+}
+
+#email{
+padding-bottom: 5px;
+
+}
+#box1{
+align-items: left;
+max-width: 85%;
+width: 85%;
+border: 0.5px solid black;
+border-radius: 5px;
+margin-top: 7px;
+padding-top: 2px;
+padding-bottom: 2px;
+margin-bottom: 30px;
+text-align: left;
+padding-left: 25px;
+padding: 10px;
+padding-left: 36px;
+height: 20px;
+font-size: 17px;
+}
+
+
+a{
+text-decoration: none;
+}
+.sign{
+max-width: 100%;
+width: 100%;
+background-color: #040f4ec9;
+
+color: white;
+
+border-radius: 5px;
+padding: 10px;
+margin-bottom: 15px;
+cursor: pointer;
+}
+.sign:active{
+background-color: rgb(31, 31, 161);
+
+}
+.sign a{
+color: white;
+}
+
+.but{
+margin-top: 70px;
+margin-bottom: 15px;
+margin-right: 2px;
+}
+::placeholder{
+font-size: 17px;
+}
+
+
+
