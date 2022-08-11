@@ -4,36 +4,49 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-    <title>FAQ Page</title>
-    <!--Ion icons-->
+    <title>Favipro</title>
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/FAQabout.css">
+    <link rel="stylesheet" href="Styles/FAQabout.css">
+    <link rel="stylesheet" href="Styles/landing-page.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./Images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./Images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./Images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./Images/site.webmanifest" />
   </head>
   <body>
     <header>
-        <img src="" alt="LOGO" />
-        <!--this is navigation toggler for mobile screen-->
-        <div class="nav-toggler">
-          <span></span>
-          </div>
-        <nav class="links">
-          <a href="#">Home</a>
-          <a href="#">About Us</a>
-          <a href="#">FAQs</a>
-        </nav>
-        <nav>
-          <a href="#"><button id="sign-in">Sign In</button></a>
-          <a href="#"><button>Sign Up</button></a>
-        </nav>
-      </header>
-      <hr />
+      <img src="Images/Rectangle 46.png" alt="LOGO" />
+      <nav class="links">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">FAQs</a>
+      </nav>
+      <nav>
+        <a href="#"><button id="sign-in">Sign In</button></a>
+        <a href="#"><button>Sign Up</button></a>
+      </nav>
+    </header>
+    <hr />
           <main>
             <section class="faq">
               <div class="faq-container">
               <div class="accordion">
-                  <div class="accordion-header">
-                    <h1 class="accordion-title">Frequently Asked <br> Questions</h1>
+                <div class="accordion-header">
+                  <h1 class="accordion-title">Frequently Asked <br> Questions</h1><br>
                     <p class="accordion-description">Get to know the questions users frequently asked from Favipro</p>
 
                   </div>
@@ -130,48 +143,46 @@
           </main>
           <!--main ends-->
           <!--footer starts-->
+          <!--footer starts-->
           <footer>
             <div class="ftr-top">
-              <img src="#" alt="favipro logo" />
-            </div>
-            <div class="ftr-btm">
-              <div>
-                <p>
-                  <b>Get in touch with us</b>
-                </p>
+              <div class="ftr-lt">
+                <img src="#" alt="favipro logo" />
+                <h4>Get in touch with us</h4>
                 <p>Subscribe to our Newsletter!</p>
                 <input type="text" placeholder="Enter your email address" />
+              </div>    
+              <div class="ftr-rt">
+                <div>
+                  <h4>Company</h4>
+                  <p>About Us</p>
+                  <p>Our Offers</p>
+                  <p>Terms of Service</p>
+                  <p>Privacy Policy</p>
+                </div>
+                <div>
+                  <h4>Resources</h4>
+                  <p>Generator</p>
+                  <p>Checker</p>
+                  <p>FAQs</p>
+                  <p>About Favipro</p>
+                </div>
+                <div>
+                  <h4>Contact</h4>
+                  <p>Contact Us</p>
+                  <p>Help Center</p>
+                </div>
               </div>
-              <div>
-                <h4>Company</h4>
-                <p>About Us</p>
-                <p>Our Offers</p>
-                <p>Terms of Service</p>
-                <p>Privacy Policy</p>
-              </div>
-              <div>
-                <h4>Resources</h4>
-                <p>Generator</p>
-                <p>Checker</p>
-                <p>FAQs</p>
-                <p>About Favipro</p>
-              </div>
-              <div>
-                <h4>Contact</h4>
-                <p>Contact Us</p>
-                <p>Help Center</p>
-              </div>
-              <hr />
-              2022 favipro.com. All rights reserved.
+            </div>
+            <hr />
+            <div class="copyright">
+              <p>2022 favipro.com. All rights reserved.</p>
             </div>
           </footer>
           <!--footer ends-->
-          <!--
-          //Nav-bar toggler scripts starts header
-          -->
-          <script src="JS/index.js"></script>
-          <!--//accordion scripts starts
-          -->
+         
+         
+        
           <script>
           var accordionItems = document.getElementsByClassName("accordion-link");
             var i;
@@ -186,9 +197,8 @@
                   answer.style.display = "block";
                 }
               });
-            }</script>
-            <!--
-          //accordion scripts ends
-        -->
-          </html>
+            }
+            </script>
+           </html>
           </body>
+          

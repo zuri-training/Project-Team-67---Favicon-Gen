@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-=======
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital@1&display=swap');
 
 *{
@@ -46,16 +45,6 @@
 .uil-google{
     color: black;
 }
-.g-signin2{
-
-    padding: 10px;
-    margin-top: 8px;
-    margin-bottom: 16px;
-    max-width: 98%;
-    width: 98%;
-    
-    cursor: pointer;
-}
     .or{
     margin: -19px auto 10px ;
     width: 20px;
@@ -68,20 +57,31 @@
 .password label{
     letter-spacing: px;
 }
+
+
+input{
+
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    border: .5px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: -10px;
+     
+    outline: none;
+}
  .box1{
     align-items: center;
     justify-content: center;
     max-width: 90%;
     width: 90%;
-    border: 0.5px solid black;
-    border-radius: 5px;
-    padding: 5px;
-   margin-top: 5px;
-    margin-bottom: -5px;
-    
+    display: flex;
 }
+
 .forgotpass{
-    
+    margin-top: 10px;
     text-align: end;
 }
 .forgotpass a{
@@ -124,14 +124,16 @@ a:hover{
 Styling the email and password 
 error meesage
 ==============================*/
-.email #email-error,
-.password #pass-error{
+.email #name_error,
+.password #pass_error{
     
   
-    bottom: 12px;
+    bottom: 20px;
     right: 17px;
     font-size: 12px;
     color: #c62828;
+    display: none;
+    
 }
 
 @media (max-width:520px){

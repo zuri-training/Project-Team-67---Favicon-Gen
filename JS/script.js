@@ -7,5 +7,5 @@ var passError = document.getElementById("pass-error");
 function validatEmail(){
     var email = document.getElementById("user-email").value;
     //this is email validation check pattern using Regex
-    if(!email.match())
+    
 }
