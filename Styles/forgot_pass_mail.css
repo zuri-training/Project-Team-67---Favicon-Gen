@@ -8,7 +8,7 @@ body{
     background-color: white;
     font-family: 'Inter', sans-serif;
     box-sizing: border-box;
-    background-image: url(Images/background.svg);
+    background-image: url(/Images/background.svg);
 }
 
 .welcome-back-form{
@@ -43,7 +43,7 @@ margin-bottom: 50px;
 .email::before{
 position: absolute;
 
-content:url(Images/envelope-solid.svg) ;
+content:url(/Images/envelope-solid.svg) ;
 width: 20px;
 height: 20px;
 padding-bottom: 0;
