@@ -6,7 +6,6 @@
   text-decoration: none;
   list-style: none;
   font-family: "Inter", sans-serif;
-  overflow-x: scroll;
 }
 
 .container {
@@ -263,7 +262,7 @@
   }
 }
 .generate-header .generate {
-  width: 13rem;
+  min-width: 13rem;
   display: flex;
   gap: 1rem;
   align-items: center;

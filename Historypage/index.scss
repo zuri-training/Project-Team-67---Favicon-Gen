@@ -9,7 +9,6 @@ $mobileScreenWidth: 768px;
     text-decoration: none;
     list-style: none;
     font-family: 'Inter', sans-serif;
-    overflow-x: scroll;
 }
 
 .container{
@@ -292,7 +291,7 @@ $mobileScreenWidth: 768px;
     }
 
     .generate{
-        width: 13rem;
+        min-width: 13rem;
         display: flex;
         gap: 1rem;
         align-items: center;
