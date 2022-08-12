@@ -19,10 +19,12 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <title>Sign up page</title>
 </head>
 <body>
+
     <!--this form action leads to the generate page-->
-    <form action="index.html" method="#" name="form" onsubmit="return validate()">
+    <form action="#" method="post" name="form" onsubmit="return validated()">
     
     <div class="welcome-back-form">
+        <label for=""  class="fa fa-times" aria-hidden="true"></label>
         <div class="welcome">
             <h1>Welcome back!</h1>
             <p class="ptag">Sign into your account</p>
@@ -30,77 +32,36 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     
 <!-- please note this is email div-->
 <div class="email">
-    <label >Username or Email Address</label>
-    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="user-name"> 
-    <span class="spa" id="name_error">Enter Your Name or Email </span>
+    <label>Username or Email</label>
+    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="name" onkeyup="validateName()"> 
+   <span id="name_error"></span>
 </div><br>
     <!-- email div close here-->
     
-   
- <!--password div starts-->   
-<div class="password">
+<!--password div starts-->   
+<div class="email">
     <label>Password</label>
-    <input class="box1" type="password" name="pass" placeholder="Enter Your Password" id="user-pass">
-    <span id="pass_error"> Enter Your Password</span>
+    <input class="box1" type="password" name="password" placeholder="Enter Your Password" id="user-pass">
+    <span id="pass_error"></span>
+   
 </div>
 <!--passowrd div ends-->
+
 <!--this link to the forget password page-->
 <p class="forgotpass">
     <a href="forgot_pass_mail.html">forgot password?</a>
 </p> 
-<div>
+<div class="input-group">
+<span id="submit_error">Fix the above error and try again</span>
 <button class="sign"><a href="#">Sign in</a> </button>
 </div>
 <p class="new">
     New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
 </p>
 </div>
-<script>
-//Validate code for user input
+</form>
+<script src="./JS/login.js">
 
-var username = document.forms['form']['username'];
-var pass = document.forms['form']['pass'];
-
-var name_error = document.getElementById('name_error');
-var pass_error = document.getElementById('pass_error');
-
-
-username.addEventListener('textInput', username_verify);
-password.addEventListener('textInput', password_verify);
-
-
-function validate(){
-    if(username.value.length < 9){
-        username.style.border = "1px solid red";
-        name_error.style.display ="block"
-        username.focus();
-        return false;
-    }
-
-    if(password.value.length < 9){
-        password.style.border = "1px solid red";
-        pass_error.style.display ="block"
-        password.focus();
-        return false;
-    }
-}
-
-function username_verify(){
-    if(username.value.length >= 9){
-        username.style.border = "1px solid green";
-        name_error.style.display ="none";
-        return true;
-    }
-}
-
-
-function password_verify(){
-    if(password.value.length >= 9){
-        password.style.border = "1px solid green";
-        pass_error.style.display ="none";
-        return true;
-    }
-}
 
 
 </script>
