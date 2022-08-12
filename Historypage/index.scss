@@ -205,14 +205,15 @@ $mobileScreenWidth: 768px;
 
         div{
             padding: .8rem 0;
+            //overflow-x: hidden;
         }
 
         .table{
             border-collapse: collapse;
 
-            @media screen and (max-width: $mobileScreenWidth) {
-                overflow-x: scroll;
-            }
+            // @media screen and (max-width: $mobileScreenWidth) {
+                
+            // }
 
             &_header{
                 background: #3F3F41;

@@ -190,11 +190,6 @@
 .main-content .generated-files .table {
   border-collapse: collapse;
 }
-@media screen and (max-width: 768px) {
-  .main-content .generated-files .table {
-    overflow-x: scroll;
-  }
-}
 .main-content .generated-files .table_header {
   background: #3F3F41;
   border-radius: 0.6rem;
