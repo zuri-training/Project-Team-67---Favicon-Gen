@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Historypage/index.css">
+    <title>Generate from emoji.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="nav">
+
+                <div class="close">
+                    <h3>X</h3>
+                </div>
+
+                <div class="logo">
+                    <a href="#"><h3>LOGO</h3></a>
+                </div>
+    
+                <div class="nav-links">
+                    <div class="nav-links_link">
+                        <a class="nav-links_link_element active" href="/Generate_from_emoji/generate.html">
+                            <span class="nav-links_link-icon">
+                                <img src="../Historypage/home-page.png" alt="">
+                             </span>
+    
+                            <span>Generator</span>
+                        </a>
+                    </div>
+    
+                    <div class="nav-links_link">
+                         <a class="nav-links_link_element" href="../Historypage/history.html">
+                            <span class="nav-links_link-icon">
+                                <img src="../Historypage/history-icon.svg" alt="">
+                             </span>
+    
+                            <span>History</span>
+                        </a>
+                    </div>
+    
+                    <div class="nav-links_link">
+                         <a class="nav-links_link_element" href="#">
+                            <span class="nav-links_link-icon">
+                                <img src="../Historypage/settings.svg" alt="">
+                             </span>
+    
+                             <span>Settings</span>
+                         </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="logout">
+                <span class="logout_icon">
+                    <img src="../Historypage/logout.png" alt="">
+                </span>
+
+                <span>Log Out</span>
+            </div>
+        </div>
+
+        <main class="main-content">
+            <header class="main-generate main-content_header">
+
+                <div class="hamburger-menu generate-menu">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <div class="generate-header">
+
+                    <div class="generate">
+                        <div class="generate-from-image">
+                            <span class="icon">
+                                <img src="./Icon.png" alt="">
+                            </span>
+
+                            <span class="icon-text">Generate from image</span>
+                        </div>
+                            
+                        <div class="generate-from-text">
+                            <span class="icon">
+                                <img src="./text.png" alt="">
+                            </span>
+
+                            <span class="icon-text">Generate from text</span>
+                        </div>
+
+                        <div class="generate-from-emoji">
+                            <span class="icon">
+                                <img src="./smile.png" alt="">
+                            </span>
+                                
+                            <span class="icon-text current">Generate from emoji</span>
+                        </div>
+                    </div>
+
+                    <div class="user">
+                        <span class="user-name">
+                            BillsOnMe
+                        </span>
+    
+                        <span class="user-icon">
+                            <img src="../Historypage/profile.svg" alt="user">
+                        </span>
+                    </div>
+                </div>
+
+            </header>
+
+            <div class="emoticons">
+                <img src="./smile.png" alt="" />
+                <img src="./frown.png" alt="">
+            </div>
+
+            <div class="inputs">
+                <div class="select-category">
+                    <form>
+                        <div>
+                            <label for="select-category">
+                                Select category
+                            </label>
+                            <select name="category" id="select-category" class="category">
+                                <option value="all">
+                                    All
+                                </option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="display-emojis">
+                    <p>All emojis</p>
+                    <div class="emojis">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button class="btn preview">
+                    <span class="btn_icon">
+                        <img src="./preview.png" alt="">
+                    </span>
+
+                    <span>Preview</span>
+                </button>
+
+                <button class="btn generate">
+                    <span class="btn_icon">
+                        <img src="./add.png" alt="">
+                    </span>
+
+                    <span>
+                        Generate
+                    </span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const menuBtn = document.querySelector(".hamburger-menu");
+        const closeBtn = document.querySelector(".close");
+
+        const sidebar = document.querySelector(".sidebar");
+
+        menuBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+        });
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.remove("open");
+        });
+    </script>
+</body>
+</html>
