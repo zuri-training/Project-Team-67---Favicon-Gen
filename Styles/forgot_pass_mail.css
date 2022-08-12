@@ -45,16 +45,10 @@
 .uil-google{
     color: black;
 }
-    .or{
-    margin: -19px auto 10px ;
-    width: 20px;
-    padding: 0;
-    padding-left: 4px;
-    background: white;
-}
 
-.email label,
-.password label{
+    
+.email label
+{
     letter-spacing: px;
 }
 
@@ -68,8 +62,7 @@ input{
     border-radius: 5px;
     padding: 5px;
     margin-top: 5px;
-    margin-bottom: -10px;
-     
+    margin-bottom: -5px;
     outline: none;
 }
  .box1{
@@ -81,7 +74,7 @@ input{
 }
 
 .forgotpass{
-    margin-top: 10px;
+    
     text-align: end;
 }
 .forgotpass a{
@@ -150,4 +143,4 @@ error meesage
     
    
 }
->>>>>>> 603c227 (Some fix on sign_in)
+
