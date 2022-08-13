@@ -14,21 +14,28 @@ header .links{
   display: flex;
   justify-content: space-around;
   width: 29%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 header .links a{
   color: #1A1A1A;
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: right;
+  justify-items: center;
+  text-align: center;
+  line-height: 70px;
 }
-header .links :hover{
+header .links a:hover{
   color: #2F3C7E;
   text-decoration: underline solid #2F3C7E 3px;
   text-underline-offset: 1.72rem;
   font-weight: 500;
+}
+header .links a:active{
+  background-color: #2F3C7E;
+  color:#FFFFFF;
 }
 p{
   color: #262626;
