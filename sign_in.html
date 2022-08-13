@@ -21,7 +21,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <body>
 
     <!--this form action leads to the generate page-->
-    <form action="#" method="post" name="form" onsubmit="return validated()">
+    <form action="#" method="post" name="form">
     
     <div class="welcome-back-form">
         <label for=""  class="fa fa-times" aria-hidden="true"></label>
@@ -32,16 +32,16 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
     
 <!-- please note this is email div-->
 <div class="email">
-    <label>Username or Email</label>
-    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="name" onkeyup="validateName()"> 
+    <label for="user_name">Username or Email</label>
+    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="user_name" onkeyup=" return validateUser()"> 
    <span id="name_error"></span>
 </div><br>
     <!-- email div close here-->
     
 <!--password div starts-->   
 <div class="email">
-    <label>Password</label>
-    <input class="box1" type="password" name="password" placeholder="Enter Your Password" id="user-pass">
+    <label for="user_pass">Password</label>
+    <input class="box1" type="password" name="password" placeholder="Enter Your Password" id="user_pass" onkeyup="return validatePass()">
     <span id="pass_error"></span>
    
 </div>
@@ -51,8 +51,7 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 <p class="forgotpass">
     <a href="forgot_pass_mail.html">forgot password?</a>
 </p> 
-<div class="input-group">
-<span id="submit_error">Fix the above error and try again</span>
+<div class="email">
 <button class="sign"><a href="#">Sign in</a> </button>
 </div>
 <p class="new">
@@ -60,7 +59,35 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 </p>
 </div>
 </form>
-<script src="./JS/login.js">
+<script>
+
+let username = document.getElementById("user_name");
+let password = document.getElementById("user_pass");
+let nameEorrr = document.getElementById("name_error");
+let passError = document.getElementById("pass_error");
+let submitError = document.getElementById("submit_error");
+let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+function validateUser(){
+
+    if(username.value.length <= 3){
+            name_error.innerHTML = "Username is too short";
+            return false;   
+        }
+        name_error.innerHTML = "Username is Valid";
+            return true;
+}
+
+function validatePass(){
+    if(!password.value.match(passRegex)){
+            pass_error.innerHTML = "Password is Weak";
+            return false;
+            
+        }
+        pass_error.innerHTML ="Password is Valid";
+        return true;
+}
+
 
 
 

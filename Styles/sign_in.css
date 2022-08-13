@@ -135,15 +135,15 @@ a:hover{
 Styling the email and password 
 error meesage
 ==============================*/
-.input-group span
+.email span
 
 {
-    position: absolute;
-    bottom: 50px;
+    
+    bottom: 17px;
     right: 17px;
     font-size: 14px;
     color: #c62828;
-    display: none;
+   
    
    
    
