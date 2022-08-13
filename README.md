@@ -1,33 +1,38 @@
-#Team 67
+# Team 67
 
-# About the Project
+## About the Project
+
 > This is a project developed by team 67, aimed at creating a web application platform for favicon generation.
 > The main feature of this platform is the favicon generator/converter which allows users generate favicons from images, text and emoji.
 
-# Project documentation 
-> https://bit.ly/3PQNNLY
+## Project documentation
 
-# Team members information and attendance 
-> https://rb.gy/ac8ghs
+> <https://bit.ly/3PQNNLY>
 
-# Table of Contents 
-1. General Information 
-2. Terminologies Used 
-3. Features 
-4. Product Specifications 
-5. Project Status 
-6. Collaborators' Guide
-7. Acknowledgment 
+## Team members information and attendance
 
-## General Information 
+> <https://rb.gy/ac8ghs>
 
-A favicon generating platform that will help users generate favicons seamlessly with embed codes 
+## Table of Contents
+
+1. General Information
+2. Requirements
+3. Installation /cUsage
+4. Features
+5. Product Specifications
+6. Project Status
+7. Collaborators' Guide
+8. Acknowledgment
+
+### General Information
+
+A favicon generating platform that will help users generate favicons seamlessly with embed codes
 
 The website platform aims to be a high performance favicon generating platform with a very good user experience that will enable them to generate favicons in a range of formats with double checked embed codes.
 
 This project will give users liberty to generate their own favorite icon in pixel sizes that ranges between 16x16, 24x24 and 32x32 pixels by simply uploading an image or a different identifier in png, svg and ico formats.
 
-## Terminologies Used in the Project
+### Requirements
 
 > **FRONTEND**
 
@@ -37,13 +42,32 @@ This project will give users liberty to generate their own favorite icon in pixe
 
 > **BACKEND**
 
-1. PHP
+1. PHP version >=7.4
+
+2. The project should use Composer version >=2.3.10
+
+3. AMPPS/WAMPS/AMPPS
 
 > **DATABASE**
 
-1. MYSQL
+1. MySQL 8.0
 
-## Features 
+### Installation / Usage
+
+Download and install PHP
+
+Download and install MySQL
+
+Download and install Composer
+
+Download and install AMPPS/WAMPS/AMPPS
+
+This command line tool can be installed using composer.
+
+Starting a server php -S localhost:8000, from the local working directory of the project that you would like to document i.e you can do it by running this code in a folder which you want to serve the pages from.
+
+### Features
+
 > Unauthenticated Users
 
 1.Landing page / Home page
@@ -53,23 +77,24 @@ This project will give users liberty to generate their own favorite icon in pixe
 > Authenticated Users
 
 1.Sign in page
-2.Edit profile 
+2.Edit profile
 3.Upload image/emoji/text
 4.Generate favicon
 5.Preview
 6.Embed codes
 7.Recently generated favicons
 
-## Product Specifications 
-1.Tablets 
+### Product Specifications
+
+1.Tablets
 2.Desktops
-3.Mobile 
+3.Mobile
 
-## Project Status
+### Project Status
 
-> In Progress 
+> In Progress
 
-## Collaborators' Guide
+### Collaborators' Guide
 
 Please note we now have the following branches
 
@@ -82,31 +107,31 @@ i. Frontend: All front-end features task branches by front-end collaborators wil
 ii. Backend: All back-end features task branches will be merge here by the
 assigned merger(s)
 
-3. Tasks (Feature) branches: These branches are made by contributors (i.e team members front-end and backend) for each task e.g Signup, Landing page, history page, sign-in.
+    3. **Tasks (Feature) branches**: These branches are made by contributors (i.e team members front-end and backend) for each task e.g Signup, Landing page, history page, sign-in.
 
-**STEPS TO FOLLOW**
+#### **STEPS TO FOLLOW**
 
 Kindly follow these steps to collaborate and push properly;
 
 A. Clone the team repo into your computer
 
-(https://github.com/zuri-training/Project-Team-67---Favicon-Gen)
+(<https://github.com/zuri-training/Project-Team-67---Favicon-Gen>)
 
 B. Switch into the appropriate dev branch either front-end or backend using your code editor CLI. Please follow the steps bellow:\;
 
 i. Add the upstream (Where you clone from i.e the origin)
 
-(git remote add upstream https://github.com/zuri-training/Project-Team-67---Favicon-Gen)
+      (git remote add upstream <https://github.com/zuri-training/Project-Team-67---Favicon-Gen>)
 
 ii. Switch to the dev branch
-    
+
     git checkout frontend
           Or
     git checkout backend
-    
+
 Now, create your feature (task) branch by running this command in your CLI
-   git checkout -b taskname
-   
+git checkout -b taskname
+
 C. Adding the files and writing commit message
 
 i. git add filename (put dot instead of filename if you’re adding all the files)
@@ -122,15 +147,13 @@ Or
 git pull upstream backend
 
 E. Push your feature (task) branch by running this command
-  Git push origin taskname e.g git push origin sign_up
-  
+Git push origin taskname e.g git push origin sign_up
+
 F. Make a pull request
 After any successful push, please make a pull request by moving over to team 67 github repo, locate and create a pull a pull request to the appropriate dev branch ( i.e frontend or backend) Write the changes you made and tag the assignedmerger(s) to alert them for a review on the new changes.
-    
-Acknowledgment 
+
+Acknowledgment
 
 Many thanks to the Zuri Team and Ingressive for good (I4G)
 
 Project was inspired by Zuri
-
-
