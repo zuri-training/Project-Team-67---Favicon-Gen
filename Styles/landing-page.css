@@ -237,7 +237,7 @@ margin-bottom: 0.5rem;
 }
 .section4 #wps{
   color: #2F3C7E;
-  font-size: 20px;
+  font-size: 17.5px;
   font-weight: 500;
 }
 .section4 h4{
@@ -293,44 +293,54 @@ font-weight: 400;
   display: flex;
   align-items: center;
   background-color: #2F3C7E;
-  margin: 4rem 5.3rem;
-  padding: 2rem;
-  border-radius: 1rem;
+  margin: 4rem 5.3rem 8rem;
+  padding: 3.5rem;
+  border-radius: 15px;
 }
 .section5 img{
   background-color: #EAEBF2;
-  padding: 5rem 1rem;
-  margin-right: 2rem;
+  padding: 6rem 2rem;
+  border-radius: 7px;
+}
+.section5 .text{
+  margin: 0rem 6rem 0rem 3rem;
 }
 .section5 h4{
   font-size: 36px;
   color: #FFFFFF;
-  margin-right: 10rem ;
   font-weight: 600;
+  margin: 0rem;
 }
 .section5 p{
   color: #FEFBFB;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight:400;
+  margin: 2.1rem 0rem;
 }
 .section5 button{
   color: #2F3C7E;
-  padding: .5rem 1.5rem;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 12px 24px;
+  height: 44px;
+  width: 160px;
+  border-radius: 8px;
   border: none;
-  border-radius: .5rem;
 }
 footer{
   background-color: #D5D8E5;
-  padding: 3rem 4rem 3rem 6rem;
+  padding: 4rem 4rem 2rem 6rem;
 }
 footer .ftr-top{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
+  padding-bottom: 3rem;
 }
 footer .ftr-rt{
   display: flex;
   justify-content: space-around;
 }
-footer h4, h5, h6{
+footer h5, h6{
   color: #2F3C7E;
   margin:0 ;
 }
@@ -341,13 +351,42 @@ footer h5{
 footer h6{
   font-size: 24px;
   font-weight: 600;
-  line-height: 36px;
+}
+footer #getintouch{
+  color: #2F3C7E;
+  font-size: 14.5px;
+  font-weight: 600;
+}
+.ftr-top .ftr-lt input{
+  height: 40px;
+  width: 280px;
+  border: 1px solid #8C8C8D;
+  border-radius: 4px;
+  padding: 0px, 12px, 0px, 12px;
+}
+::placeholder{
+  color: #8C8C8D;
+  font-family: Inter;
+  font-size: 14.5px;
+  font-weight: 400;
+  line-height: 24px;
 }
 footer p{
   color: #525D93;
+  font-size: 14.5px;
+  font-weight: 400;
 }
-footer .copyright{
-  font-size: 12px;
+.copyright{
+  display: flex;
+  align-items: center;
+}
+.copyright img{
+  width: 1rem;
+  height: 1rem;
+  margin-right: 5px;
+}
+footer .copyright p{
+  font-size: 13px;
   font-weight: 400;
   line-height: 17px;
 }
