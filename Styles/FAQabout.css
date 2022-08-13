@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:  'Inter', sans-serif;
+}
+
+
+
+/*=========================
+Nav toggler to navigation 
+mobile screen responsive
+=========================*/
+
+
+/*hide signin by default, form will be open using JS*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+
+/*=========================
+Main section styling starts
+=========================*/
+
+main{
+    
+    margin-bottom: 80px;
+}
+
+
+/*=========================
+Sign-in page
+=========================*/
+
+/*==============================
+Sign-up page
+==============================*/
+
+
+
+/*=========================
+FAQ Acordion starts
+=========================*/
+
+
+
+.faq {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    
+    
+}
+
+.faq-container{
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 100px;
+    
+    
+}
+
+
+
+.accordion{
+    
+    max-width: 90rem;
+   
+}
+.accordion-header 
+{
+  
+   text-align: center;
+   line-height: 2rem;
+   margin-top: -100px;
+    
+   
+  
+   
+
+} 
+
+ .accordion-title {
+   color:  #273269;
+    font-weight: 700;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-top: 100px;
+       
+       
+}
+.accordion-description{
+    font-size: 16px;
+    text-align: center;
+    color: #262626;;
+    line-height: 2.0;
+    margin-bottom: 50px;
+    
+}
+
+.accordion-item{
+    
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    
+}
+
+
+.accordion-item a{
+    text-decoration: none;
+
+}
+
+.accordion-item:hover{
+    background-color: #eff4fc;
+}
+
+.accordion-link{
+    font-size: 16px;
+    color:  #283042;
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.accordion-link i{
+    color: #283042;
+    padding: 5px;
+}
+
+.accordion-link .ion-md-remove{
+    display: none;
+}
+
+.answer{
+    overflow: hidden;
+    max-height: 0;
+    position: relative;
+    background-color: #eff4fc;
+    transition: max-height .25s;
+}
+
+.answer::before{
+    content: "";
+    position: absolute;
+    width: .2rem;
+    height: 100%;
+    background-color: #283042;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.answer p{
+    font-size: 16px;
+    color: #283042;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.accordion-item:target .answer{
+max-height: 20rem;
+
+
+}
+
+.accordion-item:target .accordion-link .ion-md-add{
+    display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove{
+    display: block;
+}
+
+active .answer p{
+    max-height: 0;
+    margin: 1rem 2rem;
+}
+
+
+
+/*=========================
+Privacy page styling
+=========================*/
+
+
+.privacy {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+    
+}
+
+.privacy-container{
+    width: 90%;
+    max-width: 90rem;
+    margin: 0 auto;
+    padding-top: 80px;
+    margin-bottom: 100px;
+    
+}
+
+
+.privacy-description{
+    font-size: 16px;
+    text-align: justify;
+    color: #262626;;
+    margin-top: 50px;
+    line-height: 2.0;
+    margin-bottom: 50px;
+}
+
+
+
+.privacy-item{
+text-align: justify;
+line-height: 1.8;
+font-size: 16px;
+
+
+}
+
+.privacy-heading {
+    font-size: 16px;
+    color: #2F3C7E;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: justify;
+}
+
+.privacy-list ol li{
+    font-size: 12px;
+    text-align: justify;
+    color: #1A1A1A;
+   
+    
+}
+
+
+/*=========================
+Footer
+=========================*/
+
+
+/*=========================
+Media Quesries for accordion
+=========================*/
+@media screen and (max-width: 1024px){ 
+
+
+
+
+.accordion{max-width: 90rem;}
+
+.accordion-title {font-size: 24px;}
+
+.accordion-description{font-size: 14px;
+    line-height: 1.0;
+    
+   
+}
+
+.accordion-link{
+    font-size: 18px;
+    padding: 1rem 0;
+}
+
+.faq-container,
+.privacy-container
+{
+    width: 80%;
+    display: block;
+    margin: 0px auto;
+    padding: 50px 0px;
+   
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 40%;
+}
+
+/*=========================
+Media Quesries signin
+=========================*/
+
+@media (min-width:520px){
+    .welcome-back-form{
+        width: 80%;
+    }
+    .forgotpass{
+    margin-top: 0;
+    padding-top: 10px;
+    padding: 3px;
+        margin: 0 0 25px 215px;
+    }
+  
+    
+   
+}
+
+}

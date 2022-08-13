@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--this is google meta client side ID for google auth-->
     <meta name="gogle-signin-client-id" content="86876680688-npumis891a72o4caaiqm5s14cvgtambk.apps.googleusercontent.com">
-   
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -20,40 +19,27 @@ integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLAS
 </head>
 <body>
     <!--this form action leads to the generate page-->
-    <form action="index.html" method="#" name="form" onsubmit="return validate()">
+    <form action="forgot_password.html" method="#" name="form" onsubmit="return validate()">
     
     <div class="welcome-back-form">
         <div class="welcome">
-            <h1>Welcome back!</h1>
-            <p class="ptag">Sign into your account</p>
+            <h1>Forgot Password?</h1>
+            <p class="ptag">Enter your email address below to receive reset password link</p>
         </div>
     
 <!-- please note this is email div-->
 <div class="email">
-    <label >Username or Email Address</label>
-    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="user-name"> 
+    <label >Email Address</label>
+    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="user-name"> <br>
     <span class="spa" id="name_error">Enter Your Name or Email </span>
 </div><br>
     <!-- email div close here-->
     
-   
- <!--password div starts-->   
-<div class="password">
-    <label>Password</label>
-    <input class="box1" type="password" name="pass" placeholder="Enter Your Password" id="user-pass">
-    <span id="pass_error"> Enter Your Password</span>
-</div>
-<!--passowrd div ends-->
-<!--this link to the forget password page-->
-<p class="forgotpass">
-    <a href="forgot_pass_mail.html">forgot password?</a>
-</p> 
-<div>
-<button class="sign"><a href="#">Sign in</a> </button>
-</div>
-<p class="new">
-    New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
-</p>
+    <!--the link her leads user to their email to reset password-->
+    <div class="but" >
+        <button class="sign">
+            <a href="#">Get Reset Link</a>
+        </button>
 </div>
 <script>
 //Validate code for user input
@@ -65,12 +51,12 @@ var name_error = document.getElementById('name_error');
 var pass_error = document.getElementById('pass_error');
 
 
-username.addEventListener('textInput', username_verify);
+username.addEventListener('textInput', name_verify);
 password.addEventListener('textInput', password_verify);
 
 
 function validate(){
-    if(username.value.length < 9){
+    if(username.value.length <9){
         username.style.border = "1px solid red";
         name_error.style.display ="block"
         username.focus();
@@ -108,3 +94,4 @@ function password_verify(){
 
 </body>
 </html>
+
