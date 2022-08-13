@@ -138,8 +138,9 @@ margin-bottom: 0.5rem;
 .whyFavipro div{
   border: 2px solid #2F3C7E;
   border-radius: 1rem;
-  margin-right: 1rem;
+  margin-right: 1.5rem;
   padding: 1rem;
+  position: relative;
 }
 .whyFavipro img{
   width: 2.5rem;
@@ -163,10 +164,15 @@ margin-bottom: 0.5rem;
   line-height: 25px;
   letter-spacing: 0em;
   text-align: left;
+  margin-bottom: 3rem;
 }
 .whyFavipro a{
   color: #525D93;
   font-size: 14px;
+}
+.whyFavipro #getstarted{
+  position: absolute;
+  bottom: 1.5rem;
 }
 .whyFavipro a img{
   width: 0.4rem;
@@ -249,6 +255,7 @@ margin-bottom: 0.5rem;
 .section4 .comnt{
 font-size: 18px;
 font-weight: 400;
+margin-bottom: 5rem;
 }
 .section4 .comments{
   display: grid;
@@ -260,13 +267,14 @@ font-weight: 400;
   margin-right: 1.5rem;
   padding: 1rem;
   border-radius: 0.5rem;
+  position: relative;
 }
 .section4 .comments img{
   width: 3.5rem;
 }
-.section4 .comments h6{
-  color: #333333;
-  font-size: 18px;
+.section4 .comments #user{
+  position: absolute;
+  bottom: 0.3rem;
 }
 .section4 .comments #name{
   color: #333333;
@@ -390,3 +398,144 @@ footer .copyright p{
   font-weight: 400;
   line-height: 17px;
 }
+@media (max-width:1080px){
+  .section1{
+    padding-inline: 10rem;
+  }
+  .section3 .btm{
+    margin: 0rem 5rem;
+}
+@media (max-width:820px){
+  .section1{
+    padding-inline: 8rem;
+  }
+  .brands{
+    padding-inline: 1rem;
+  }
+  .section2{
+    padding: 2rem 2rem 2rem 3rem;
+  }
+  .section3{
+    padding: 0rem 0rem 2rem;
+    margin-bottom: 3rem;
+  }
+  .section3 h4{
+    font-size: 30px;
+  }
+  .section3 .btm{
+    margin: 0rem 3rem;
+  }
+  .section4{
+    margin: 4rem 3rem;
+    padding: 1rem 1rem 2rem;
+  }
+  .section4 h4{
+    font-size: 30px;
+  }
+  .section4 .comnt{
+  margin-bottom: 3rem;
+  }
+  .section4 .comments div{
+    margin-right: 1rem;
+  }
+  .section5{
+    margin: 4rem 3rem 8rem;
+    padding: 3.5rem;
+    border-radius: 15px;
+  }
+  .section5 img{
+    background-color: #EAEBF2;
+    padding: 6rem 2rem;
+    border-radius: 7px;
+  }
+  .section5 .text{
+    margin: 0rem 2rem;
+  }
+  .section5 h4{
+    font-size: 24px;
+  }
+  .section5 p{
+    font-size: 16px;
+  }
+  footer{
+    padding: 2rem;
+  }
+  footer .ftr-top{
+    grid-template-columns: 1fr 1.5fr;
+    padding-bottom:1rem;
+  }
+  footer p{
+    font-size: 15px;
+  }
+}
+@media (max-width:600px){
+  .section1{
+    padding-inline: 1rem;
+  }
+  .section1 h2{
+    font-size: 20px;
+  }
+  .brands{
+    padding-inline: 0rem;
+  }
+  .section2{
+    padding: 2px;
+  }
+  .section3{
+    padding: 0rem 0rem 1rem;
+    margin-bottom: 3rem;
+  }
+  .section3 h4{
+    font-size: 20px;
+  }
+  .section3 .btm{
+    margin: 0rem 3rem;
+  }
+  .section4{
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .section4 h4{
+    font-size: 20px;
+  }
+  .section4 .comnt{
+  margin-bottom: 3rem;
+  }
+  .section4 .comments div{
+    margin-right: 1rem;
+  }
+  .section5{
+    flex-direction: column;
+    margin: 1rem 1rem 3rem;
+    padding: 3.5rem;
+    border-radius: 15px;
+  }
+  .section5 img{
+    padding: 6rem 1rem;
+    border-radius: 7px;
+  }
+  .section5 .text{
+    margin: 0rem 1rem;
+  }
+  .section5 h4{
+    font-size: 20px;
+  }
+  .section5 p{
+    font-size: 16px;
+  }
+  footer{
+    padding: 1rem;
+  }
+  footer .ftr-top{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:1rem;
+  }
+  footer .ftr-top .ftr-rt{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:1rem;
+  }
+  footer p{
+    font-size: 15px;
+  }
