@@ -510,9 +510,6 @@ footer .copyright p{
   font-weight: 400;
   line-height: 24px;
   }
-  #sign-in{
-    display: none;
-  }
   .section1 .tick{
     margin-inline: 1rem .3rem;
     width: 1rem;
