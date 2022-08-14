@@ -11,24 +11,30 @@ header img{
   max-width: 8.45rem;
 }
 header .links{
-  display: flex;
   justify-content: space-around;
   width: 29%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
 }
 header .links a{
   color: #1A1A1A;
   font-family: Inter;
   font-size: 14px;
   font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0em;
-  text-align: right;
+  justify-items: center;
+  text-align: center;
+  line-height: 70px;
 }
-header .links :hover{
+header .links a:hover{
   color: #2F3C7E;
   text-decoration: underline solid #2F3C7E 3px;
   text-underline-offset: 1.72rem;
   font-weight: 500;
+}
+header .links a:active{
+  background-color: #2F3C7E;
+  color:#FFFFFF;
 }
 p{
   color: #262626;
@@ -469,73 +475,300 @@ footer .copyright p{
   }
 }
 @media (max-width:600px){
+  header{
+    height: 40px;
+  }
+  header img{
+    max-width: 5rem;
+  }
+  header .links{
+    justify-content: space-around;
+    width: 50%;
+  }
+  header .links a{
+    font-size: 8px;
+    line-height: 70px;
+  }
+  header button{
+    height: 30px;
+    width: 50px;
+    padding: 6px;
+    font-size: 10px;
+  }
   .section1{
-    padding-inline: 1rem;
+    padding: 0rem 1.5rem;
+    justify-content: center;
   }
   .section1 h2{
-    font-size: 20px;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 50px;
+    margin: 1rem 0rem;
+  }
+  .section1 p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  }
+  #sign-in{
+    display: none;
+  }
+  .section1 .tick{
+    margin-inline: 1rem .3rem;
+    width: 1rem;
   }
   .brands{
-    padding-inline: 0rem;
+    display: none;
   }
   .section2{
-    padding: 2px;
+    padding: 1rem;
+  }
+  .section2 .whatWeOffer{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-left: 0.5rem;
+  }
+  .section2 h4{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0rem 0.5rem 0.3rem;
+  }
+  .whyFavipro{
+    display: flex;
+    flex-direction: column;
+  }
+  .whyFavipro div{
+    margin: 1rem 0.5rem;
+    padding: 1.5rem;
+    position: relative;
+  }
+  .whyFavipro h6{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 1rem 0rem;
+  }
+  .whyFavipro p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 0.5rem;
+  }
+  .whyFavipro a{
+    display: none;
   }
   .section3{
-    padding: 0rem 0rem 1rem;
-    margin-bottom: 3rem;
+    background-color:#FAFAFA;
+    padding: 1rem;
+    margin-bottom: 0rem;
+  }
+  .section3 .top{
+    margin-inline: 1rem -1rem;
+  }
+  .section3 .top img{
+    margin: 0rem 1rem -3.5rem;
+    width: 1.4rem;
   }
   .section3 h4{
     font-size: 20px;
+    margin-bottom: 0rem;
+  }
+  .section3 .top p{
+    line-height: 20px;
+  }
+  .section3 h6{
+    font-size: 17px;
+    font-weight: 600;
+    margin: .6rem 0rem;
+  }
+  .section3 p{
+    margin-top: 0rem;
+    font-size: 16px;
+    line-height: 20px;
   }
   .section3 .btm{
-    margin: 0rem 3rem;
+    margin: 0.2rem .5rem;
+  }
+  .section3 .rectangle{
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 6px 9px rgb(233, 229, 229);
+    border-radius: 0.3rem;
+    padding: .1rem;
+    margin-bottom: 1rem;
+  }
+  .section3 .num{
+    padding: 0.6rem;
+    margin: 0rem 0.5rem;
   }
   .section4{
-    margin: 1rem;
-    padding: 1rem;
+    margin: 0rem 1rem;
+    padding: 1.5rem 1rem 2rem;
+    border-radius: 1rem;
+    background-color: #D5D8E5;
+  }
+  .section4 #wps{
+    font-size: 17.5px;
+    font-weight: 500;
   }
   .section4 h4{
-    font-size: 20px;
+    color: #2F3C7E;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 0 0 0.5rem;
   }
   .section4 .comnt{
+  font-size: 18px;
+  font-weight: 400;
   margin-bottom: 3rem;
   }
+  .section4 .comments{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
   .section4 .comments div{
-    margin-right: 1rem;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  .section4 .comments #user{
+    position: absolute;
+    bottom: 0.2rem;
+  }
+  .section4 .comments #name{
+    font-size: 16px;
+    font-weight: 500;
+    margin: 0rem;
+  }
+  .section4 .comments #role{
+    font-size: 14px;
+    line-height: 1px;
+  }
+  .navigate{
+    margin: 0rem;
+  }
+  .navigate .dots img{
+    display: none;
+  }
+  .navigate .point img{
+    margin-left: 1.5rem;
   }
   .section5{
+    display: flex;
     flex-direction: column;
-    margin: 1rem 1rem 3rem;
-    padding: 3.5rem;
+    margin: 2rem 1rem;
+    padding: 1rem;
     border-radius: 15px;
   }
   .section5 img{
-    padding: 6rem 1rem;
-    border-radius: 7px;
+    display: none;
   }
   .section5 .text{
-    margin: 0rem 1rem;
+    margin: 1rem;
   }
   .section5 h4{
-    font-size: 20px;
+    line-height: 36px;
+    font-size: 24px;
   }
   .section5 p{
-    font-size: 16px;
+    font-size: 18px;
+    margin: 1rem 0rem;
+  }
+  .section5 button{
+    font-size: 14px;
+    padding: 12px 10px;
+    width: 100px;
   }
   footer{
-    padding: 1rem;
+    background-color: #D5D8E5;
+    padding: 2rem 2rem;
+    margin: 0;
   }
   footer .ftr-top{
     display: flex;
     flex-direction: column;
-    padding-bottom:1rem;
+    padding-bottom: 2rem;
   }
-  footer .ftr-top .ftr-rt{
-    display: flex;
-    flex-direction: column;
-    padding-bottom:1rem;
+  footer .ftr-rt{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+  }
+  footer h5, h6{
+    color: #2F3C7E;
+    margin:0 ;
+  }
+  footer h5{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  footer h6{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  footer #getintouch{
+    color: #2F3C7E;
+    font-size: 14.5px;
+    font-weight: 600;
+  }
+  .ftr-top .ftr-lt input{
+    height: 40px;
+    width: 320px;
+    border: 1px solid #8C8C8D;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 0px, 12px;
+  }
+  ::placeholder{
+    font-size: 14.5px;
+    font-weight: 400;
+    line-height: 24px;
   }
   footer p{
-    font-size: 15px;
+    color: #525D93;
+    font-size: 14.5px;
+    font-weight: 400;
   }
+  .copyright{
+    display: flex;
+    align-items: center;
+  }
+  .copyright img{
+    width: 1rem;
+    height: 1rem;
+    margin-right: 5px;
+  }
+  footer .copyright p{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 17px;
+  }
+}
+@media (max-width:375px){
+    .section1{
+    padding: 0rem 0.8rem;
+  }
+  .section1 h2{
+    font-size: 30px;
+  }
+  .section1 p{
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 22px;
+  }
+  .section1 .tick{
+    margin-inline: .5rem .1rem;
+    width: 1rem;
+  }
+  .section4 h4{
+    font-size: 22px;
+  }
+  footer input{
+    width: 200px;
+  }
+  .ftr-top .ftr-lt input{
+    width: 290px;
+  }
+}
