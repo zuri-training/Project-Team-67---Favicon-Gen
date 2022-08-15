@@ -1,3 +1,45 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family:  'Inter', sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 100%;
+  max-width: 100%;
+}
+
+header img{
+  max-width: 8.45rem;
+  
+}
+header .links{
+  display: flex;
+  justify-content: space-around;
+  width: 29%;
+ 
+}
+header .links a{
+  color: #1A1A1A;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: right;
+  
+=======
 body {
 	font-family: "Inter";
 }
@@ -24,6 +66,7 @@ header .links a {
 	justify-items: center;
 	text-align: center;
 	line-height: 70px;
+>>>>>>> e23410d783011d95e1d35d2e94c8e499b0464060
 }
 header .links a:hover {
 	color: #2f3c7e;
@@ -38,9 +81,23 @@ header .links a:active {
 p {
 	color: #262626;
 }
+<<<<<<< HEAD
+
+header button{
+  color: #ffffff;
+  background-color: #2F3C7E;
+  height: 42px;
+  width: 92px;
+  top: 20px;
+  border-radius: 8px;
+  border: 1px solid #2F3C7E;
+  padding: 12px, 24px;
+  margin-left: 10px;
+=======
 a {
 	color: #1f295c;
 	text-decoration: none;
+>>>>>>> e23410d783011d95e1d35d2e94c8e499b0464060
 }
 header button {
 	color: #ffffff;
@@ -56,12 +113,38 @@ header button {
 header button:hover {
 	cursor: pointer;
 }
+<<<<<<< HEAD
+
+/* Nav toggler hamburger*/
+.links a.active {
+  background-color: #747DA9;
+  color: white;
+}
+
+
+.links .icon {
+  display: none;
+}
+
+#sign-in{
+  color:#747DA9;
+  background-color: #ffffff;
+}
+
+.section1{
+  background-image: url("../Images/Frame 5746.png");
+  background-size: cover;
+  text-align: center;
+  padding: 4rem 22rem 4rem;
+  justify-content: center;
+=======
 hr {
 	margin-bottom: 0;
 }
 #sign-in {
 	color: #747da9;
 	background-color: #ffffff;
+>>>>>>> e23410d783011d95e1d35d2e94c8e499b0464060
 }
 .section1 {
 	background-image: url("../Images/Frame 5746.png");
@@ -109,6 +192,18 @@ hr {
 	margin-inline: 1rem 0.3rem;
 	width: 1rem;
 }
+<<<<<<< HEAD
+.brands{
+  width: 100%;
+  max-width: 100%;
+  background-color: #D1D1D133;
+  display: flex;
+  justify-content: space-around;
+  margin: none;
+  height: 5rem;
+  padding: 2rem 5rem;
+
+=======
 .brands {
 	background-color: #d1d1d133;
 	display: flex;
@@ -116,6 +211,7 @@ hr {
 	margin: none;
 	height: 5rem;
 	padding: 2rem 5rem;
+>>>>>>> e23410d783011d95e1d35d2e94c8e499b0464060
 }
 .section2 {
 	padding: 3rem 4.3rem 2rem 6.3rem;
@@ -913,3 +1009,83 @@ footer .copyright p {
 		display: flex;
 	}
 }
+<<<<<<< HEAD
+
+@media screen and (max-width: 600px) {
+ 
+
+  .section1{
+    padding-inline: 1rem;
+  }
+  .section1 h2{
+    font-size: 20px;
+  }
+  .brands{
+    padding-inline: 0rem;
+  }
+  .section2{
+    padding: 2px;
+  }
+  .section3{
+    padding: 0rem 0rem 1rem;
+    margin-bottom: 3rem;
+  }
+  .section3 h4{
+    font-size: 20px;
+  }
+  .section3 .btm{
+    margin: 0rem 3rem;
+  }
+  .section4{
+    margin: 1rem;
+    padding: 1rem;
+  }
+  .section4 h4{
+    font-size: 20px;
+  }
+  .section4 .comnt{
+  margin-bottom: 3rem;
+  }
+  .section4 .comments div{
+    margin-right: 1rem;
+  }
+  .section5{
+    flex-direction: column;
+    margin: 1rem 1rem 3rem;
+    padding: 3.5rem;
+    border-radius: 15px;
+  }
+  .section5 img{
+    padding: 6rem 1rem;
+    border-radius: 7px;
+  }
+  .section5 .text{
+    margin: 0rem 1rem;
+  }
+  .section5 h4{
+    font-size: 20px;
+  }
+  .section5 p{
+    font-size: 16px;
+  }
+  footer{
+    padding: 1rem;
+  }
+  footer .ftr-top{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:1rem;
+  }
+  footer .ftr-top .ftr-rt{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:1rem;
+  }
+  footer p{
+    font-size: 15px;
+  }
+   
+}
+   
+=======
+>>>>>>> e23410d783011d95e1d35d2e94c8e499b0464060
