@@ -3,18 +3,18 @@
 session_start();
 
 if (isset($_SESSION["user_id"])) {
-    
-    $mysqli = require __DIR__ . "/db.php";
+    $pdo = require __DIR__ . "/db.php";
     
     $sql = "SELECT * FROM users
             WHERE id = {$_SESSION["user_id"]}";
             
-    $result = $mysqli->query($sql);
+    $result = $pdo->query($sql);
     
-    $user = $result->fetch_assoc();
+    $user = $result->fetch();
 }
 
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +28,7 @@ if (isset($_SESSION["user_id"])) {
     
     <?php if (isset($user)): ?>
         
-        <p>Hello <?= htmlspecialchars($user["name"]) ?> Welcome to your Dashboard</p>
+        <p>Hello <?= htmlspecialchars($user["username"]) ?> Welcome to your Dashboard</p>
         
 
         <form action="upload.php" method="post" enctype="multipart/form-data">
@@ -44,7 +44,7 @@ if (isset($_SESSION["user_id"])) {
         
     <?php else: ?>
         
-        <p><a href="login.php">Log in</a> or <a href="signup.html">sign up</a></p>
+        <p><a href="sign_in.html">Log in</a> or <a href="signup.html">sign up</a></p>
         
     <?php endif; ?>
     

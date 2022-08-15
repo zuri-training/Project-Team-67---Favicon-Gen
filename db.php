@@ -1,17 +1,25 @@
 <?php
 
-$host = "localhost";
-$dbname = "login_db";
-$username = "root";
-$password = "";
+/* declare(strict_types=1); */
 
-$mysqli = new mysqli(hostname: $host,
-                     username: $username,
-                     password: $password,
-                     database: $dbname);
-                     
-if ($mysqli->connect_errno) {
-    die("Connection error: " . $mysqli->connect_error);
-}
+/* require_once('vendor/autoload.php'); */
 
-return $mysqli;
+/* $dotenv = Dotenv\Dotenv::createImmutable(__DIR__); */
+/* $dotenv->load(); */
+
+//
+// make a database connection
+$db = parse_url(getenv("DATABASE_URL"));
+
+$pdo = new PDO("pgsql:" . sprintf(
+    "host=%s;port=%s;user=%s;password=%s;dbname=%s",
+    $db["host"],
+    $db["port"],
+    $db["user"],
+    $db["pass"],
+    ltrim($db["path"], "/")
+));
+
+return $pdo;
+
+

@@ -28,15 +28,15 @@
   
   </header>
   <main>
-    <form action="#" method="post" name="form">
+    <form action="login.php" method="post" name="form">
       <section class="welcome">
         <h4>Welcome Back!</h4>
         <p>Sign in to your favipro account</p>
         <hr />
       </section>
       <div>    
-        <label for="Username,email">Username or Email Address</label>
-        <input type="text"class="box1" name="username"  id="user_name"  placeholder="Johndoe@gmail.com"
+        <label for="identifier">Username or Email Address</label>
+        <input type="text"class="box1" name="identifier"  id="identifier"  placeholder="Johndoe@gmail.com"
                 onkeyup=" return validateUser()">
         <span id="name_error"></span>
       </div>
@@ -98,7 +98,7 @@
     </div>
   </footer>      
     <script>
-      let username = document.getElementById("user_name");
+      let identifier = document.getElementById("identifier");
       let password = document.getElementById("user_pass");
       let nameEorrr = document.getElementById("name_error");
       let passError = document.getElementById("pass_error");
@@ -106,11 +106,11 @@
       let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
       function validateUser() {
-        if (username.value.length <= 3) {
+        if (identifier.value.length <= 3) {
             name_error.innerHTML = "Username is too short";
             return false;
         }
-        name_error.innerHTML = "Username is Valid";
+        name_error.innerHTML = "Username or Email is Valid";
         return true;
       }
       function validatePass() {

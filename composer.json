@@ -1,0 +1,6 @@
+{
+  "require": {
+    "ext-pdo_sqlite": "*",
+    "vlucas/phpdotenv": "^5.4"
+  }
+}
