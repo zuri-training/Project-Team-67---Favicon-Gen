@@ -35,9 +35,15 @@
         <hr />
       </section>
       <div>    
+<<<<<<< HEAD
         <label for="identifier">Username or Email Address</label>
         <input type="text"class="box1" name="identifier"  id="identifier"  placeholder="Johndoe@gmail.com"
                 onkeyup=" return validateUser()">
+=======
+        <label for="Username,email">Username or Email Address</label>
+        <input type="text"class="box1" name="username"  id="user_name"  placeholder="Johndoe@gmail.com"
+                onkeyup=" return validateUser()" required>
+>>>>>>> main
         <span id="name_error"></span>
       </div>
       <!-- email div closes here-->
@@ -46,11 +52,13 @@
       <div >
         <label for="Password">Password</label>
         <input class="box1" type="password" name="password" placeholder="*************" id="user_pass"
-                onkeyup="return validatePass()">
+                onkeyup="return validatePass()" required>
       <span id="pass_error"></span>
       </div>
       <!--passowrd div ends-->
+>>>>>>> 23c7c4df50eea3b2f702fd6c2b5c40d981f13875
 
+<<<<<<< HEAD
       <!--this link to the forget password page-->
       <a href="forgot_pass_mail.html">
         <p class="forgot">Forgot password?</p>
@@ -123,4 +131,58 @@
       }
   </script>
 </body>
+=======
+				<!--password div starts here-->
+				<div>
+					<label for="Password">Password</label>
+					<input
+						class="box1"
+						type="password"
+						name="password"
+						placeholder="*************"
+						id="user_pass"
+						onkeyup="return validatePass()"
+					/>
+					<span id="pass_error"></span>
+				</div>
+				<!--passowrd div ends-->
+
+				<!--this link to the forget password page-->
+				<a href="forgot_pass_mail.html">
+					<p class="forgot">Forgot password?</p>
+				</a>
+				<a href="#"><button class="sign">Sign in</button></a>
+				<p class="new">
+					New to favipro.com? <a href="sign_up.html" id="signin">Sign up</a>
+				</p>
+			</form>
+		</main>
+		<script>
+			let username = document.getElementById("user_name");
+			let password = document.getElementById("user_pass");
+			let nameEorrr = document.getElementById("name_error");
+			let passError = document.getElementById("pass_error");
+			let submitError = document.getElementById("submit_error");
+			let passRegex =
+				/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
+
+			function validateUser() {
+				if (username.value.length <= 3) {
+					name_error.innerHTML = "Username is too short";
+					return false;
+				}
+				name_error.innerHTML = "Username is Valid";
+				return true;
+			}
+			function validatePass() {
+				if (!password.value.match(passRegex)) {
+					pass_error.innerHTML = "Password is Weak";
+					return false;
+				}
+				pass_error.innerHTML = "Password is Valid";
+				return true;
+			}
+		</script>
+	</body>
+>>>>>>> main
 </html>
