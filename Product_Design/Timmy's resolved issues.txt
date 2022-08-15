@@ -1,0 +1,30 @@
+During the course of the project, i resolved the following issues;
+
+1. I created issues and assigned various roles to my team mates on Github.
+Link - https://bit.ly/3vqEb20
+
+2. I created the readme file for the team's repository and updated it at intervals.
+
+3. I priortized ideas gotten from the interviews conducted and as a team we brainstormed together to come up with the final features list for the web platform we're creating 
+while we had the main features requests from our client (Zuri team) as our top priority we added some extra features based off  pain points from people interviewed.
+
+Link - https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/FAVICON_GEN_67?node-id=0%3A1
+ 
+4. I designed the mood boards which includes the design inspirations, texture swatches, typography, illustrations, photography and color inspiration.
+
+Link - https://www.figma.com/file/a7eNEvgyRVpQ5AK1tRqYGu/Team-67_FaviconGen?node-id=448%3A34654
+
+5. I designed the following pages for tablet screens;
+       a. The generate with image page 
+       b. The generate with text page
+       c.  History dashboard
+       d. File is ready overlay
+       e. Forgot password (Both pages)
+
+Link - https://www.figma.com/file/a7eNEvgyRVpQ5AK1tRqYGu/Team-67_FaviconGen?node-id=448%3A34654
+
+6. I came up with the team's detailed documentation for the first presentation submission.
+
+Link - https://bit.ly/3PQNNLY
+
+7. I hosted a meeting and worked with other team members for the creation of the user flow.

@@ -1,0 +1,22 @@
+The works I carried out for Team_67 during the project phase.
+
+1. I came up with the research plan
+Link - https://docs.google.com/document/d/1UAl76ph7uoccHORZPK5nRQLLB1Sgu35MEeBt_6ZAGCw/edit?usp=sharing
+
+2. I updated the research questionnaires on google Docs because some questions still needed to be added to the research questionnaires.
+Link - https://forms.gle/WsxcW1DLguqCXu3w9
+
+3. I was involved in brainstorming and idea prioritization/ Features list which was done together as a team.
+Link - https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1
+
+4. I was also involved in creating user flow for our product since I was assigned to creating wireframes. Creating user flow was also a team work.
+Link - https://www.figma.com/file/0N3a2LLfYSCHMHDnm9mT4V/Team-67_FaviconGen?node-id=0%3A1
+
+5. I was involved in the creation of style guides. I updated the spacers & typography.
+Link - https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=0%3A1
+
+6. I was assigned to designing wireframes. I designed wireframes for the sign up & sign in pages, About us page ,Privacy policy page & Generator pages
+Link - https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=85%3A207
+
+7. I also contributed my quota in designing the high-fidelity wireframes. The pages include About us page, Privacy policy page & Landing page.
+Link - https://www.figma.com/file/ZcSZnNzakETxFuuABySiCT/Team-67_FaviconGen-(Copy)?node-id=448%3A34654
