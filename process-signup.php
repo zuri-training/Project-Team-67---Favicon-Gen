@@ -1,19 +1,23 @@
 <?php
-include_once 'db.php';
+  $username = $_POST['username'];
+  $email = $_POST['email'];
+  $password = $_POST['password'];
 
-// to make it secure add mysqli_real_escape_string
-$username = mysqli_real_escape_string($conn, $_POST['username']);
-$Email = mysqli_real_escape_string($conn, $_POST['email']);
-$Password = mysqli_real_escape_string($conn, $_POST['password']);
+  $pdo = require_once 'db.php';
 
+  $sql = 'INSERT INTO users (username, email, password) VALUES(:username, :email, :password)';
 
+  $statement = $pdo->prepare($sql);
 
-$sql = "INSERT INTO register (username, email, password ) VALUES ('$username','$Email', '$Password');";
-mysqli_query($conn, $sql);
+  $statement->execute(
+    [
+      ':username' => $username,
+      ':email' => $email,
+      ':password' => $password
+    ]
+  );
 
-
-header("Location: index.php?signup=success");
-
+  header("Location: index.php?signup=success");
 ?>
 
 
