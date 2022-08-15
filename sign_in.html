@@ -37,7 +37,7 @@
       <div>    
         <label for="Username,email">Username or Email Address</label>
         <input type="text"class="box1" name="username"  id="user_name"  placeholder="Johndoe@gmail.com"
-                onkeyup=" return validateUser()">
+                onkeyup=" return validateUser()" required>
         <span id="name_error"></span>
       </div>
       <!-- email div closes here-->
@@ -46,7 +46,7 @@
       <div >
         <label for="Password">Password</label>
         <input class="box1" type="password" name="password" placeholder="*************" id="user_pass"
-                onkeyup="return validatePass()">
+                onkeyup="return validatePass()" required>
       <span id="pass_error"></span>
       </div>
       <!--passowrd div ends-->
