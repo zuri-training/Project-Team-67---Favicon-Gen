@@ -1,58 +1,20 @@
 <?php
+include_once 'db.php';
 
-if (empty($_POST["name"])) {
-    die("Name is required");
-}
-
-if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-    die("Valid email is required");
-}
-
-if (strlen($_POST["password"]) < 8) {
-    die("Password must be at least 8 characters");
-}
-
-if ( ! preg_match("/[a-z]/i", $_POST["password"])) {
-    die("Password must contain at least one letter");
-}
-
-if ( ! preg_match("/[0-9]/", $_POST["password"])) {
-    die("Password must contain at least one number");
-}
-
-$password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
-
-$mysqli = require __DIR__ . "/db.php";
-
-$sql = "INSERT INTO users (name, email, password_hash)
-        VALUES (?, ?, ?)";
-        
-$stmt = $mysqli->stmt_init();
-
-if ( ! $stmt->prepare($sql)) {
-    die("SQL error: " . $mysqli->error);
-}
-
-$stmt->bind_param("sss",
-                  $_POST["name"],
-                  $_POST["email"],
-                  $password_hash);
-                  
-if ($stmt->execute()) {
-
-    header("Location: signup-success.html");
-    exit;
-    
-} else {
-    
-    if ($mysqli->errno === 1062) {
-        die("email already taken");
-    } else {
-        die($mysqli->error . " " . $mysqli->errno);
-    }
-}
+// to make it secure add mysqli_real_escape_string
+$username = mysqli_real_escape_string($conn, $_POST['username']);
+$Email = mysqli_real_escape_string($conn, $_POST['email']);
+$Password = mysqli_real_escape_string($conn, $_POST['password']);
 
 
+
+$sql = "INSERT INTO register (username, email, password ) VALUES ('$username','$Email', '$Password');";
+mysqli_query($conn, $sql);
+
+
+header("Location: index.php?signup=success");
+
+?>
 
 
 
