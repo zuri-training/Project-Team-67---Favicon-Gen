@@ -1,98 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--this is google meta client side ID for google auth-->
-    <meta name="goggle-signin-client-id" content="86876680688-npumis891a72o4caaiqm5s14cvgtambk.apps.googleusercontent.com">
-   
-    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
-integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-<link rel="stylesheet" href="styles/sign_in.css">  
-<title>Sign in page</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+  <link rel="stylesheet" href="Styles/sign_in.css" />  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-
-    <!--this form action leads to the generate page-->
+  <header>    
+    <img src="Images/Favipro (2).png" alt="LOGO" />
+    <nav class="links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Tutorials</a>        
+    </nav>
+    <nav>
+      <a href=""><button id="sign-in">Sign In</button></a>
+      <a href="#"><button>Sign Up</button></a>
+    </nav>
+  </header>
+  <hr />
+  
+  </header>
+  <main>
     <form action="#" method="post" name="form">
-    
-    <div class="welcome-back-form">
-        <label for=""  class="fa fa-times" aria-hidden="true"></label>
-        <div class="welcome">
-            <h1>Welcome back!</h1>
-            <p class="ptag">Sign into your account</p>
+      <section class="welcome">
+        <h4>Welcome Back!</h4>
+        <p>Sign in to your favipro account</p>
+        <hr />
+      </section>
+      <div>    
+        <label for="Username,email">Username or Email Address</label>
+        <input type="text"class="box1" name="username"  id="user_name"  placeholder="Johndoe@gmail.com"
+                onkeyup=" return validateUser()">
+        <span id="name_error"></span>
+      </div>
+      <!-- email div closes here-->
+
+      <!--password div starts here-->
+      <div >
+        <label for="Password">Password</label>
+        <input class="box1" type="password" name="password" placeholder="*************" id="user_pass"
+                onkeyup="return validatePass()">
+      <span id="pass_error"></span>
+      </div>
+      <!--passowrd div ends-->
+
+      <!--this link to the forget password page-->
+      <a href="forgot_pass_mail.html">
+        <p class="forgot">Forgot password?</p>
+      </a>
+      <a href="#"><button class="sign">Sign in</button></a>
+      <p class="new">
+        New to favipro.com? <a href="sign_up.html" id="signin">Sign up</a>
+      </p>
+    </form>
+  </main>  
+  <footer>
+    <div class="ftr-top">
+      <div class="ftr-lt">
+        <h5>favipro.com</h5>
+        <p id="getintouch">Get in touch with us</p>
+        <p>Subscribe to our Newsletter!</p>
+        <input type="text" placeholder="Enter your email address" />
+      </div>    
+      <div class="ftr-rt">
+        <div>
+          <h6>Company</h6>
+          <p>About Us</p>
+          <p>Our Offers</p>
+          <p>Terms of Service</p>
+          <p>Privacy Policy</p>
         </div>
-    
-<!-- please note this is email div-->
-<div class="email">
-    <label for="user_name">Username or Email</label>
-    <input class="box1" type="text" name="username" placeholder="Enter Your Username" id="user_name" onkeyup=" return validateUser()"> 
-   <span id="name_error"></span>
-</div><br>
-    <!-- email div close here-->
-    
-<!--password div starts-->   
-<div class="email">
-    <label for="user_pass">Password</label>
-    <input class="box1" type="password" name="password" placeholder="Enter Your Password" id="user_pass" onkeyup="return validatePass()">
-    <span id="pass_error"></span>
-   
-</div>
-<!--passowrd div ends-->
+        <div>
+          <h6>Resources</h6>
+          <p>Generator</p>
+          <p>Checker</p>
+          <p>FAQs</p>
+          <p>About Favipro</p>
+        </div>
+        <div>
+          <h6>Contact</h6>
+          <p>Contact Us</p>
+          <p>Help Center</p>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="copyright">
+      <img src="Images/copyright.png" alt="">
+      <p>2022 favipro.com. All rights reserved.</p>
+    </div>
+  </footer>      
+    <script>
+      let username = document.getElementById("user_name");
+      let password = document.getElementById("user_pass");
+      let nameEorrr = document.getElementById("name_error");
+      let passError = document.getElementById("pass_error");
+      let submitError = document.getElementById("submit_error");
+      let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
 
-<!--this link to the forget password page-->
-<p class="forgotpass">
-    <a href="forgot_pass_mail.html">forgot password?</a>
-</p> 
-<div class="email">
-<button class="sign"><a href="#">Sign in</a> </button>
-</div>
-<p class="new">
-    New to favipro.com?&nbsp;<a href="sign_up.html" id="signin">Sign up</a>
-</p>
-</div>
-</form>
-<script>
-
-let username = document.getElementById("user_name");
-let password = document.getElementById("user_pass");
-let nameError = document.getElementById("name_error");
-let passError = document.getElementById("pass_error");
-let submitError = document.getElementById("submit_error");
-let passRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/;
-
-function validateUser(){
-
-    if(username.value.length <= 3){
+      function validateUser() {
+        if (username.value.length <= 3) {
             name_error.innerHTML = "Username is too short";
-            return false;   
+            return false;
         }
         name_error.innerHTML = "Username is Valid";
-            return true;
-}
-
-function validatePass(){
-    if(!password.value.match(passRegex)){
+        return true;
+      }
+      function validatePass() {
+        if (!password.value.match(passRegex)) {
             pass_error.innerHTML = "Password is Weak";
             return false;
-            
         }
-        pass_error.innerHTML ="Password is Valid";
+        pass_error.innerHTML = "Password is Valid";
         return true;
-}
-
-
-
-
-</script>
-
-
+      }
+  </script>
 </body>
 </html>
