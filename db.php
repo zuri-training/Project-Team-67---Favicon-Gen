@@ -7,9 +7,14 @@ $password = "mysql";
 
 $mysqli = new mysqli("hostname", "dbname", "username", "password") ;
 
-                     
-if ($mysqli->connect_errno) {
-    die("Connection error: " . $mysqli->connect_error);
-}
+     // Create a connection 
+     $conn = mysqli_connect($servername, 
+         $username, $password, $database);
 
-return $mysqli;
+         if($conn) {
+            echo "success"; 
+        } 
+        else {
+            die("Error". mysqli_connect_error()); 
+        } 
+    ?>
