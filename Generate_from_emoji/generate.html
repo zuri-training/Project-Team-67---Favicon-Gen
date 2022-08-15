@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../Historypage/index.css">
     <title>Generate from emoji.</title>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+    <script>
+        tinymce.init({
+          selector: ".textarea",
+          plugins: "emoticons",
+          toolbar: "emoticons",
+          toolbar_location: "bottom",
+          menubar: false,
+          height: 200,
+          width: 500
+        });
+      </script>
 </head>
 <body>
     <div class="container">
@@ -22,7 +34,7 @@
     
                 <div class="nav-links">
                     <div class="nav-links_link">
-                        <a class="nav-links_link_element active" href="/Generate_from_emoji/generate.html">
+                        <a class="nav-links_link_element active" href="generate.html">
                             <span class="nav-links_link-icon">
                                 <img src="../Historypage/home-page.png" alt="">
                              </span>
@@ -146,9 +158,9 @@
                 <div class="display-emojis">
                     <p>All emojis</p>
                     <div class="emojis">
-                        <p>
+                        <textarea class="textarea">
 
-                        </p>
+                        </textarea>
                     </div>
                 </div>
             </div>
