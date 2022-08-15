@@ -1,14 +1,12 @@
 <?php
 
-$host = "localhost";
-$dbname = "login_db";
+$hostname = "localhost";
+$dbname = "myFaviproDB";
 $username = "root";
-$password = "";
+$password = "mysql";
 
-$mysqli = new mysqli(hostname: $host,
-                     username: $username,
-                     password: $password,
-                     database: $dbname);
+$mysqli = new mysqli("hostname", "dbname", "username", "password") ;
+
                      
 if ($mysqli->connect_errno) {
     die("Connection error: " . $mysqli->connect_error);
