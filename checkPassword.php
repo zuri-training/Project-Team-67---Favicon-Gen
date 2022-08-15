@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
     /*
       1.Retrieve post data : "uname" and "pass".
       2.CheckCheck if  user name and password is valid.
@@ -8,4 +8,5 @@
     }else{
         echo "invalid input";
     }
-?>
+?> -->
+

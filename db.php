@@ -1,7 +1,7 @@
 <?php
 
 $host = "localhost";
-$dbname = "favicondb";
+$dbname = "login_db";
 $username = "root";
 $password = "";
 
