@@ -20,13 +20,9 @@ if ( ! preg_match("/[0-9]/", $_POST["password"])) {
     die("Password must contain at least one number");
 }
 
-if ($_POST["password"] !== $_POST["password_confirmation"]) {
-    die("Passwords must match");
-}
-
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
-$mysqli = require __DIR__ . "/database.php";
+$mysqli = require __DIR__ . "/db.php";
 
 $sql = "INSERT INTO users (name, email, password_hash)
         VALUES (?, ?, ?)";
