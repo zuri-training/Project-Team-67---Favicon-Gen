@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -40,6 +41,58 @@
 					<span id="name_error"></span>
 				</div>
 				<!-- email div closes here-->
+=======
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-in</title>
+  <link rel="stylesheet" href="Styles/sign_in.css" />  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>    
+    <img src="Images/Favipro (2).png" alt="LOGO" />
+    <nav class="links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">FAQs</a>
+      <a href="#">Tutorials</a>        
+    </nav>
+    <nav>
+      <a href=""><button id="sign-in">Sign In</button></a>
+      <a href="#"><button>Sign Up</button></a>
+    </nav>
+  </header>
+  <hr />
+  
+  </header>
+  <main>
+    <form action="#" method="post" name="form">
+      <section class="welcome">
+        <h4>Welcome Back!</h4>
+        <p>Sign in to your favipro account</p>
+        <hr />
+      </section>
+      <div>    
+        <label for="Username,email">Username or Email Address</label>
+        <input type="text"class="box1" name="username"  id="user_name"  placeholder="Johndoe@gmail.com"
+                onkeyup=" return validateUser()" required>
+        <span id="name_error"></span>
+      </div>
+      <!-- email div closes here-->
+
+      <!--password div starts here-->
+      <div >
+        <label for="Password">Password</label>
+        <input class="box1" type="password" name="password" placeholder="*************" id="user_pass"
+                onkeyup="return validatePass()" required>
+      <span id="pass_error"></span>
+      </div>
+      <!--passowrd div ends-->
+>>>>>>> 23c7c4df50eea3b2f702fd6c2b5c40d981f13875
 
 				<!--password div starts here-->
 				<div>

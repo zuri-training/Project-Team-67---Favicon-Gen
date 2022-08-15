@@ -47,6 +47,166 @@ Sign-up page
 ==============================*/
 
 
+/*=========================
+About Us
+=========================*/
+
+.about{
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: white;
+   
+    
+  }
+  
+  .about-container{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+  }
+  
+  .content-section{
+    float: left;
+    width: 55%;
+  }
+
+  .image-section{
+    float: right;
+    width: 40%;
+  }
+  .image-section img{
+    width: 100%;
+    height: auto;
+  }
+  
+  .about-title{
+    width:100%;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  
+  .about-container .about-title h1{
+    text-transform: capitalize;
+    font-size: 25px;
+    color: #283042;
+  }
+  
+  .content-section .title{
+    font-size: 25px;
+    color: #283042;
+    text-align: start;
+  
+  }
+  
+  .content-section .content p{
+    margin-top: 50px;
+    color:   #283042;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.5;
+  
+  }
+  
+  .content-section .content .button{
+    margin-top: 50px;
+  }
+  
+  
+  .content-section .content .button a{
+    text-decoration: none;
+    padding: 8px 25px;
+    background-color:  #2F3C7E;
+    border-radius: 40px;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1.5px;
+  }
+  
+  
+ .content-section .content .button a:hover{
+    color: #747DA9;
+    background-color:#2f3c7e;
+    transition: 1s ease;
+  }
+  .team{
+    background-color: white;
+   
+  }
+  
+  .team-container{
+   margin-left: 20px;
+   margin-right: 20px;
+  }
+  
+  .team-heading{
+    color: #283042;
+    padding-top: 40px;
+    margin-bottom: 15px;
+    
+  }
+  
+  .team-title-1{
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 18px;
+    color: #283042;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .profiles{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .profile{
+    flex: 50%;
+  }
+  
+  
+  .profile .profile-img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 400ms;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   
+  }
+  
+  .profile .user-name{
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .team-title-2{
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 18px;
+    color: #283042;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: ;
+  }
+  
+  
+  .team-title-2::after{
+    content: "";
+    height: 5px;
+    width: 80px;
+    background-color: #283042;
+    border-radius: 25px;
+    display: block;
+    margin: 5px;
+  }
+  
+  
+  
+
 
 /*=========================
 FAQ Acordion starts
@@ -277,9 +437,6 @@ Media Quesries for accordion
 =========================*/
 @media screen and (max-width: 1024px){ 
 
-
-
-
 .accordion{max-width: 90rem;}
 
 .accordion-title {font-size: 24px;}
@@ -304,15 +461,68 @@ Media Quesries for accordion
     padding: 50px 0px;
    
 }
-.content-section{
-    float: left;
-    width: 55%;
+
+.profiles{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 60px;
+}
+
+.profile{
+  margin-top: 20px;
+flex-basis: 260px;
+flex: 25%;
+}
+
+
+.profile .profile-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+
+ 
+}
+
+
+@media screen and (max-width: 768px){ 
+
+.content-section,
+.image-section{
+  float: none;
+  width: 100%;
 }
 
 .image-section{
-    float: right;
-    width: 40%;
+  margin-top: 20px;
 }
+
+ 
+.profiles{
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 60px;
+}
+
+.profile{
+  margin-top: 20px;
+flex-basis: 260px;
+flex: 25%;
+}
+
+
+.profile .profile-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 400ms;
+
+ 
+ 
+
+
 
 /*=========================
 Media Quesries signin
@@ -326,7 +536,7 @@ Media Quesries signin
     margin-top: 0;
     padding-top: 10px;
     padding: 3px;
-        margin: 0 0 25px 215px;
+    margin: 0 0 25px 215px;
     }
   
     
